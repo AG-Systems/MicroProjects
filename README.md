@@ -6,10 +6,14 @@ Started working on it: June 26 2015
 
 **Description**
 
-List programms I want to make:
-Rootkit
-Gui keylogger
-Reddit bot
-Twitter bot
+rbot = reddit bot.
+
+fbot = facebook bot.
+
+tbot = twitter bot.
+
+ybot = youtube bot.
+
+
 
 
