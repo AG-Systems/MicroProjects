@@ -10,7 +10,7 @@ response_text = "Auriga is here!! Do you want to message my creater? [Click righ
 
 processed = []
 while True:
-    for c in comment_stream(r, 'sandboxtest'):
+    for c in comment_stream(r, 'pcmasterrace'):
         if target_text in c.body and c.id not in processed:
             c.reply(response_text)
             processed.append(c.id)
