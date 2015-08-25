@@ -6,13 +6,15 @@ Started working on it: June 26 2015
 
 **Description**
 
-rbot = reddit bot.
+The list of languages I am planning to try and use.
 
-fbot = facebook bot.
+C++
 
-tbot = twitter bot.
+Python
 
-ybot = youtube bot.
+C/Assembly
+
+Perl
 
 
 
