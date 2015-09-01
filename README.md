@@ -14,7 +14,7 @@ Python
 
 C/Assembly
 
-Perl
+
 
 
 
