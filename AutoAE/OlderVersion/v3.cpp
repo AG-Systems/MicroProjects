@@ -13,6 +13,7 @@ int declare()
     ip.ki.wScan = 0;
     ip.ki.time = 0;
     ip.ki.dwExtraInfo = 0;
+    std::cout << "declare" << std::endl;
 }
 
 void StartProgram(string filename)
@@ -23,7 +24,7 @@ void StartProgram(string filename)
 
 int main() 
 {
-
+	int declare();
 	StartProgram("AfterFX");
 	Sleep(9000);
 	INPUT ip;
