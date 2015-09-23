@@ -4,16 +4,18 @@ Make my After effects automatic
 
 ## Installation
 
-TODO: Describe the installation process
+Download the zip files and run the .exe
+
 
 ## Usage
 
-TODO: Write usage instructions
+Just run and go.
 
 ## Features
 
 1. Launch After effects
 2. Make a comp
+3. Import all of the videos from a recent folder into AE
 
 
 Planned:
@@ -36,7 +38,7 @@ Started working on Sept, 16, 2015
 
 ## Credits
 
-TODO: Write credits
+None topkek
 
 ## License
 
