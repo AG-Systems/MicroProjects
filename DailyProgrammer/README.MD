@@ -24,7 +24,7 @@ You run it.
 
 ## Contributors
 
-Nobody helped me besides myself.
+Nobody helped me besides myself. Besides looking up documentation of course.
 
 ## License
 
