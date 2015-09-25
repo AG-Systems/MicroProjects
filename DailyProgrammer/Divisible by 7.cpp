@@ -1,15 +1,13 @@
 #include<iostream>
-
 // started on sep 23 2015
 
 int main() 
 {
 int number, reverse = 0;
-//std::cout<< "Input a Number to Reverse and press Enter: ";
-// std::cin>> number;
-int n = 5432;
-std::cout << n << std::endl;
-number = n;
+
+number = 1234; 
+int dv1 = number / 7;
+std::cout <<  dv1 << std::endl;
 
    for( ; number!= 0 ; )
    {
@@ -17,21 +15,8 @@ number = n;
       reverse = reverse + number%10;
       number = number/10;
    }
-std::cout<< "Reversed Number is:  "<<reverse;
-   for( int z = 0; z < 20; z++)
-   {
-	std:: cout << number << reverse;
-	   if ( number % 7)
-		{
-			std:: cout << number << reverse;
-			if ( reverse % 7)
-			{
-			std::cout << number << reverse;
-			}
-		}
-   }
-
- 
+   int dv2 = reverse / 7;
+   std::cout <<  dv2 << std::endl;
    return 0;
-   system("PAUSE");
+
 }
