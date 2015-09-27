@@ -1,0 +1,7 @@
+Have not decided on what specifically its going to do
+
+1.  Spread the code over the network and delete all of the data at once once it spread far enough
+
+2.  SPreads the code over the network and then all of the data from the infomation gets transported into one compter to the netowrk
+and then goes to a small group of computers in the network then goes to you.
+
