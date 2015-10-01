@@ -6,23 +6,33 @@
 
 using std::string;
 
-void StartProgram(string filename)
+int declare()
 {
-	ShellExecute(NULL,"open",filename.c_str(),NULL,NULL,SW_SHOWNORMAL);
-}
-
-int main() 
-{
-
- 
-	StartProgram("AfterFX");
-	Sleep(5000);
 	INPUT ip;
     ip.type = INPUT_KEYBOARD;
     ip.ki.wScan = 0;
     ip.ki.time = 0;
     ip.ki.dwExtraInfo = 0;
-	
+    std::cout << "declare" << std::endl;
+}
+
+void StartProgram(string filename)
+{
+	ShellExecute(NULL,"open",filename.c_str(),NULL,NULL,SW_SHOWNORMAL);
+}
+
+
+int main() 
+{
+	int declare();
+	StartProgram("AfterFX");
+	Sleep(9000);
+	INPUT ip;
+    ip.type = INPUT_KEYBOARD;
+    ip.ki.wScan = 0;
+    ip.ki.time = 0;
+    ip.ki.dwExtraInfo = 0;
+	void ControlN();
     while(1)
     {
         // Press the "Ctrl" key
@@ -30,12 +40,12 @@ int main()
         ip.ki.dwFlags = 0; // 0 for key press
         SendInput(1, &ip, sizeof(INPUT));
  
-        // Press the "V" key
+        // Press the "N" key
         ip.ki.wVk = 'N';
         ip.ki.dwFlags = 0; // 0 for key press
         SendInput(1, &ip, sizeof(INPUT));
  
-        // Release the "V" key
+        // Release the "N" key
         ip.ki.wVk = 'N';
         ip.ki.dwFlags = KEYEVENTF_KEYUP;
         SendInput(1, &ip, sizeof(INPUT));
@@ -50,6 +60,70 @@ int main()
         ip.ki.dwFlags = 0; // 0 for key press
         SendInput(1, &ip, sizeof(INPUT));
 		ip.ki.wVk = VK_RETURN;
+        ip.ki.dwFlags = KEYEVENTF_KEYUP;
+        SendInput(1, &ip, sizeof(INPUT));
+		break;
+    }
+	Sleep(1000);
+	while(1)
+    {
+        // Press the "Ctrl" key
+        ip.ki.wVk = VK_CONTROL;
+        ip.ki.dwFlags = 0; // 0 for key press
+        SendInput(1, &ip, sizeof(INPUT));
+ 
+        // Press the "V" key
+        ip.ki.wVk = 'I';
+        ip.ki.dwFlags = 0; // 0 for key press
+        SendInput(1, &ip, sizeof(INPUT));
+ 
+        // Release the "V" key
+        ip.ki.wVk = 'I';
+        ip.ki.dwFlags = KEYEVENTF_KEYUP;
+        SendInput(1, &ip, sizeof(INPUT));
+ 
+        // Release the "Ctrl" key
+        ip.ki.wVk = VK_CONTROL;
+        ip.ki.dwFlags = KEYEVENTF_KEYUP;
+        SendInput(1, &ip, sizeof(INPUT));
+		break;
+    }
+	Sleep(1000);	
+	mouse_event(MOUSEEVENTF_LEFTDOWN, 206, 260, 0, 0);
+	mouse_event(MOUSEEVENTF_LEFTUP, 206, 260, 0, 0);
+	while(1)
+    {
+        
+		// Press the "Ctrl" key
+        ip.ki.wVk = VK_CONTROL;
+        ip.ki.dwFlags = 0; // 0 for key press
+        SendInput(1, &ip, sizeof(INPUT));
+        // Press the "V" key
+        ip.ki.wVk = 'A';
+        ip.ki.dwFlags = 0; // 0 for key press
+        SendInput(1, &ip, sizeof(INPUT));
+ 
+        // Release the "V" key
+        ip.ki.wVk = 'A';
+        ip.ki.dwFlags = KEYEVENTF_KEYUP;
+        SendInput(1, &ip, sizeof(INPUT));
+ 
+        // Release the "Ctrl" key
+        ip.ki.wVk = VK_CONTROL;
+        ip.ki.dwFlags = KEYEVENTF_KEYUP;
+        SendInput(1, &ip, sizeof(INPUT));
+		break;
+    }
+	Sleep(1000);
+	while(1)
+    {
+        // Press the "Ctrl" key
+        ip.ki.wVk = VK_RETURN;
+        ip.ki.dwFlags = 0; // 0 for key press
+        SendInput(1, &ip, sizeof(INPUT));
+ 
+        // Release the "Ctrl" key
+        ip.ki.wVk = VK_RETURN;
         ip.ki.dwFlags = KEYEVENTF_KEYUP;
         SendInput(1, &ip, sizeof(INPUT));
 		break;
