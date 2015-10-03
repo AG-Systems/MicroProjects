@@ -31,7 +31,9 @@ void YouWon()
 int main ()
 {
   srand ( time(NULL) ); //initialize the random seed
-  
+  std::cout << "Welcome to blackjack the crappy version that you should not be playing" << std::endl;
+  std::cout << "-------------------------------------------------------------" << std::endl;
+  std::cout << "The commands are: hitme & fold. No captiols or space. If you do not do those proper commands it will break" << std::endl;
 
   const char arrayNum[11] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '10'};
   int RandIndex = rand() % 11; 
