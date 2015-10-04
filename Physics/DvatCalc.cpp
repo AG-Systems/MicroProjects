@@ -6,7 +6,7 @@ int vo;
 int velo;
 int acc;
 int sec;
-
+int velo2 = velo * velo;
 // v = v0 + A*T
 // x = x0 + v0*t + 1/2*a*t*t
 // v*v = v0 * vo + 2*a(x-x0)
@@ -22,7 +22,8 @@ int equation2()
 }
 int equation3()
 {
-//    (velo * velo ) = (vo * vo) + 2*acc * distance;    
+//    (velo * velo ) = (vo * vo) + 2*acc * distance;   
+velo2 = (vo * vo) + 2*acc * distance;   
 }
 
 int equation4()
