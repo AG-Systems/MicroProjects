@@ -15,10 +15,11 @@ int declare()
     ip.ki.dwExtraInfo = 0;
     std::cout << "declare" << std::endl;
 }
-
+// I never use the int declare you can delete if you want to.
 void StartProgram(string filename)
 {
 	ShellExecute(NULL,"open",filename.c_str(),NULL,NULL,SW_SHOWNORMAL);
+	// this function launches the file that I put in the parameters. 
 }
 
 
@@ -33,6 +34,7 @@ int main()
     ip.ki.time = 0;
     ip.ki.dwExtraInfo = 0;
 	void ControlN();
+	// It starts after effects and it sets up the time.
     while(1)
     {
         // Press the "Ctrl" key
