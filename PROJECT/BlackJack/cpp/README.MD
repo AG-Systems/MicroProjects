@@ -11,7 +11,7 @@ Known issues:
 
 #Project state:
 
-prototype | expermental | beta | ** stable ** | production
+** STABLE/BEATA **
 
 ## Folder structure
 
