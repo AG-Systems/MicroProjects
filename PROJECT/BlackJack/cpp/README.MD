@@ -24,4 +24,5 @@ This project was ment for me to make a game without getting help. So please do n
 
 ## License
 tldr: Do whatever you want with this code. I think you should use other peoples code over this to be honest.
+
 [MIT](./LICENSE).
