@@ -24,4 +24,4 @@ Please understand I'm not the best programmer so expect to see some sloppy code 
 
 ## License
 
-[MIT](./LICENSE).
+[MIT](./LICENSE)
