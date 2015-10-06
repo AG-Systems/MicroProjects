@@ -1,30 +1,27 @@
--------------------------------------------------------------------------------
-BlackJack
--------------------------------------------------------------------------------
-Version: Shit Tier
-Release date: Oct 1 2015
--------------------------------------------------------------------------------
-Project state:
-[prototype] | expermental | beta | stable | production 
--------------------------------------------------------------------------------
-Credits
-  Just me for now
--------------------------------------------------------------------------------
-Project description
+# BlackJack cpp 
 
-Trying to make a blackjack game. This is harder then expected. My algorithm is too complex for a such simple game.
--------------------------------------------------------------------------------
-Dependencies:
+This is my first true game where I did not look up anything online besides the random gen. I am proud of this project as it
+took me a few days and I struggled trying to make it happen. Its unclean code but it works.
 
-Not being dumb by reading the code.
--------------------------------------------------------------------------------
-Documentation
+For more information about how it works, read the comments that I placed.
 
--------------------------------------------------------------------------------
-Installation instructions
+Known issues:
+- Does not display the right card ammount after the 2nd hitme
+- Does not display the correct fold ammount
 
-You honesty do not want to play it until the final verison. 
--------------------------------------------------------------------------------
-Additional Notes
+#Project state:
 
-It sucks I know. I feel bad for not finishing it.
+prototype | expermental | beta | ** stable ** | production
+
+## Folder structure
+
+The other files are drafts and should not be looked at unless you want to see how it got evolved.
+
+## Contributing guidelines
+
+This project was ment for me to make a game without getting help. So please do not try messaging me and saying what needs to be improved in this project. Thanks!
+
+
+## License
+tldr: Do whatever you want with this code. I think you should use other peoples code over this to be honest.
+[MIT](./LICENSE).
