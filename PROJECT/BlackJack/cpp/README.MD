@@ -11,7 +11,7 @@ Known issues:
 
 #Project state:
 
-** STABLE/BEATA **
+**STABLE/BEATA**
 
 ## Folder structure
 
