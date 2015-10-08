@@ -2,7 +2,6 @@
 #include <string>
 std::string text;
 
-
 int main()
 {
     std::cout << "Write the sentence that you want encrypt: " << std::endl;
