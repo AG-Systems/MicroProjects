@@ -1,1 +1,12 @@
 A folder of encryptions
+
+encrpytion idea.
+
+
+1. Enter a sentence you want to encrypt
+2. Runs a random picker
+3. 
+-converts it to numbers
+-add 1-10 characters add++
+4. outputs to a txt file
+5. 
