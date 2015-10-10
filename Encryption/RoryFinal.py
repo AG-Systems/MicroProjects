@@ -34,3 +34,4 @@ with open(root.fileName, "rb") as imageFile:
 # Works best with .jpeg for now.
 # Finished: Oct 10, 2015, 1 am.
 # Auther: AG-Systems
+# Must have python 3.4
