@@ -14,10 +14,10 @@ print (root.fileName)
 
 with open(root.fileName, "rb") as imageFile:
     str = base64.b64encode(imageFile.read())
-
-
-    
-    print(hashlib.md5(str.encode('utf-8')).hexdigest())
+    print (type(str).__name__)
+    str.decode("utf-8")
+    hashing = str.decode("utf-8")
+    print(hashlib.md5(hashing.encode('utf-8')).hexdigest())
     
     
 
