@@ -16,14 +16,24 @@ with open(root.fileName, "rb") as imageFile:
     str = base64.b64encode(imageFile.read())
 
 
-    #print (str)
     
-    base64.b64encode(b'your name')
-    base64.b64encode('your name'.encode('ascii'))
-    print(hashlib.md5('your name'.encode('utf-8')).hexdigest())
-    #print(hashlib.md5(str.encode('utf-8')).hexdigest())
+    print(hashlib.md5(str.encode('utf-8')).hexdigest())
     
-    #if you print this string out you will get a huge mess
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 comment2 = """
@@ -38,5 +48,20 @@ fh.write(str.decode('base64'))
 fh.close()
 """
 
+
+    #print (str)
+   # fh = open(root.fileName, "wt")
+  #  print (str)
+  #  fh.write(str.decode('base64'))
+   # print (str)
+  #  fh.close()
+    
+    
+  #  base64.b64encode(b'your name')
+  #  base64.b64encode('your name'.encode('ascii'))
+
+    #print(hashlib.md5(str.encode('utf-8')).hexdigest())
+    
+    #if you print this string out you will get a huge mess
 
 
