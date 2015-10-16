@@ -104,4 +104,5 @@ int main()
         std::cout << "The average velocity is : " << velo << "\n" << equation4() << std::endl;    
     }
 }
-// for some reason this is not working. Change everything to floats.
+// for some reason this is not working. 
+// 
