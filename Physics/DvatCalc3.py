@@ -1,6 +1,8 @@
 from tkinter import *
 import math
-
+#The difference between dvatcalc 4 vs dvatcalc 3.
+#Dvatcalc4 = finished gui design.
+#Dvatcalc3 = has equations somewhat working.
 
 
 def calc():
