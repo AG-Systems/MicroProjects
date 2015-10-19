@@ -47,8 +47,8 @@ button1=Button(myGUI,text='Calculate!',command=calc).grid(row=6,column=0)
 
 
 
-
+# using python 3x
 
 
 #      r = urllib.request.urlopen('http://physicshelp.me/motion/onedimension')
-    # print(r.read())
+# print(r.read())
