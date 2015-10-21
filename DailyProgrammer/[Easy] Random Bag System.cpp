@@ -1,4 +1,4 @@
-// Example program
+#include <Windows.h>
 #include <iostream>
 #include <string>
 #include <time.h>
@@ -9,8 +9,12 @@ int main()
 {
     srand ( time(NULL) ); 
     std::string textArray[7] = {"O", "I", "S", "Z", "L", "J", "T"};
-    int RandIndex = rand() % 7; 
-    std::cout << textArray[RandIndex];
-    
+    for(int z = 0; z < 50; z++)
+	{
+		int RandIndex = rand() % 7; 
+		
+		std::cout << textArray[RandIndex];
+	}
+std::cout << std::endl;
+system("PAUSE");
 }
-
