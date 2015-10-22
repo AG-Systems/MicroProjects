@@ -2,6 +2,7 @@
 #include <Windows.h>
 #include <string>
 #include <algorithm>
+#include <fstream>
 
 
 std::string input;
@@ -19,11 +20,16 @@ int main()
 {
 	std::cout << "Please start typing: " << std::endl;
 	std::cin >> input;
+	std::ofstream myfile;
+	myfile.open ("MachineLearning.txt");
 	for(int z = 0; z < 26;z++)
 	{
 		size_t n = std::count(input.begin(), input.end(), AlphabetLower[z]);
 		std::cout << AlphabetLower[z] << n << std::endl;
+		myfile << AlphabetLower[z] << n << std::endl;
+
 	}
+
 	system("PAUSE");
 
 
