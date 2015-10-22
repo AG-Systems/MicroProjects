@@ -43,8 +43,6 @@ int main()
         total++;    
     }
     std::vector<int> pool;
-    std::cout << total << std::endl;
-    
     for(int zz = 0; zz < 26;zz++)
 	{
 		size_t fx = std::count(input.begin(), input.end(), AlphabetLower[zz]);
@@ -56,13 +54,27 @@ int main()
 		       pool.push_back (AlphabetLower[zz]);
 		       if(fx > 2)
 		       {
-		            pool.push_back (AlphabetLower[zz]);    
+		            pool.push_back (AlphabetLower[zz]);  
+		            if(fx > 3)
+		            {
+		              pool.push_back (AlphabetLower[zz]);        
+		            }
 		       }
 		    }
 		}
+	if (fx == 0)
+	{
+	    
+	}
+	
+	
 	}
 	int randomIndex = rand() % pool.size();
-	std::cout << randIndex << std::endl;
+	for(int vv = 0; vv < 100; vv++)
+	{
+	    randomIndex = rand() % pool.size();
+	    std::cout << randomIndex << std::endl;
+	}
 }
 
 
