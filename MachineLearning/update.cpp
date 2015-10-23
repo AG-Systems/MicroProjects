@@ -49,7 +49,7 @@ int main()
 			   pool.push_back (AlphabetLower[z]);
 			   std::cout << AlphabetLower[z] << "pool pushed back 3 " << std::endl;
 			default:
-				std::cout << "okay" << std::endl;
+				// std::cout << "okay" << std::endl;
 			//int randomIndex = rand() % pool.size();
 		}
 	}
