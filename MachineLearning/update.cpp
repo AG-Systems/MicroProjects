@@ -85,6 +85,7 @@ Total = Counts the total amount of characters in a string. This will be responsi
 input = String that the user inputted
 Alphabet[z] = Goes through the array of the alphabet. 
 
-
+Things need to be fixed::
+Fix and figure out whats wrong with the switch statements.
 
 */
