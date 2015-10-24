@@ -73,6 +73,6 @@ input = String that the user inputted
 Alphabet[z] = Goes through the array of the alphabet. 
 
 Things need to be fixed::
-Fix and figure out whats wrong with the switch statements.
+Make a good algorithm so I do not have to copy paste a bunch of if statements for the variable of N.
 
 */
