@@ -45,7 +45,7 @@ int main()
         std::cout << *i << ' ';
     }
     int randomIndex = rand() % pool.size();
-    std::cout << "----------------------------------------------" << "\n" << "Predication: " << "\n" << std::endl;
+    std::cout << "\n" << "----------------------------------------------" << "\n" << "Predication: " << "\n" << std::endl;
 	for (int zz = 0; zz < 10; zz++)
 	{
     randomIndex = rand() % pool.size();
