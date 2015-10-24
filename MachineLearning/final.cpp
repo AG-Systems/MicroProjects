@@ -5,6 +5,7 @@
 #include <vector>
 #include <stdlib.h>
 #include <time.h>
+#include <Windows.h>
 
 std::string input;
 
@@ -50,17 +51,14 @@ int main()
     randomIndex = rand() % pool.size();
 	std::cout << pool[randomIndex];
 	}
-	getchar();
+	system("PAUSE");
 }
 
 
 /*
 1. Counts each specific letter
-2. Assigns a value to each letter
-3. Remove all of the zeros in the "pool". So you end up having all of the letters counted above 0 to be in a list.
-4. Get the percents of each letter.
-5. Use the computer to predict what letter will go next.
-6. Output to console so the user sees what the computer is predicating.
+2. Pushs the amount of letters into a array/vector
+3, Pulls a random letter from the pool
 
 */
 
