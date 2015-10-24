@@ -46,11 +46,14 @@ int main()
     }
     int randomIndex = rand() % pool.size();
     std::cout << "\n" << "----------------------------------------------" << "\n" << "Predication: " << "\n" << std::endl;
+    myfile << "\n" << "----------------------------------------------" << "\n" << "Predication: " << "\n" << std::endl;
 	for (int zz = 0; zz < 10; zz++)
 	{
-    randomIndex = rand() % pool.size();
-	std::cout << pool[randomIndex];
+    		randomIndex = rand() % pool.size();
+		std::cout << pool[randomIndex];
+		myfile << pool[randomIndex];	
 	}
+	myfile.close();
 	system("PAUSE");
 }
 
