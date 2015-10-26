@@ -23,12 +23,12 @@ int main()
     std::string arr[n];
     int i = 0;
     std::stringstream ssin(input);
-    while (ssin.good() && i < 4)
+    while (ssin.good() && i < n)
     {
         ssin >> arr[i];
         ++i;
     }
-    for(i = 0; i < 4; i++)
+    for(i = 0; i < n; i++)
     {
         std::cout << arr[i] << std::endl;
     }
