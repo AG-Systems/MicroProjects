@@ -1,12 +1,15 @@
 #include <iostream>
-template <typename Type> // this is the template parameter declaration
-Type max(Type tX, Type tY)
-{ 
-    std::cout << tX << std::endl;
+
+template<class auriga>
+auriga addstuff(auriga a, auriga b)
+{
+return a+b;    
 }
 
 int main()
 {
-  std::cout << max(Tpye tX, Type tY) << std::endl;
-  return 0;
+    int x = 5, y = 5, z;
+    z=addstuff(x,y);
+    std::cout << z << std::endl;
+    
 }
