@@ -51,7 +51,7 @@ int main()
 	    {
     	    randomIndex = rand() % pool.size();
 		    std::cout << pool[randomIndex];
-		    char picker = pool[randomIndex];
+		    picker = pool[randomIndex];
 	    }
         char first = input.find (pool[randomIndex]);
         char nd = input.find (pool[randomIndex + 1);
