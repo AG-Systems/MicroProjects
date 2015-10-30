@@ -54,12 +54,16 @@ int main()
 		    char picker = pool[randomIndex];
 	    }
         char first = input.find (pool[randomIndex]);
-        char nd = input.find (picker + 1);
+        char nd = input.find (pool[randomIndex + 1);
         for ( int i = 0 ; i < input.length(); i++)
         {
-                if ( input[i] != first || input[i] != nd )
+                if ( input[i] == first || input[i] == nd )
                 {
                     chain.push_back ( nd );       
+                }
+                else
+                {
+                    std::cout << "Skipped " << std::endl;
                 }
         }
 
@@ -67,6 +71,9 @@ int main()
     {
         std::cout << *xx << ' ';
     }
+    
+    int ri = rand() % chain.size();
+    std::cout << chain[ri];
 }
 
 
