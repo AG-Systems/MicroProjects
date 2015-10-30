@@ -54,7 +54,7 @@ int main()
 		    picker = pool[randomIndex];
 	    }
         char first = input.find (pool[randomIndex]);
-        char nd = input.find (pool[randomIndex + 1);
+        char nd = input.find (pool[randomIndex] + 1);
         for ( int i = 0 ; i < input.length(); i++)
         {
                 if ( input[i] == first || input[i] == nd )
