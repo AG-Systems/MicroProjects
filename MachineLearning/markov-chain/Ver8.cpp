@@ -72,7 +72,7 @@ int main()
     }
     
     int ri = rand() % chain.size();
-    std::cout << "The machine learning predict will be:  " << chain[ri];
+    std::cout << "\n " << "The machine learning predict will be:  " << chain[ri];
     std::cout << "\n " << "---------------------------------------------------" << "\n" << "CUSTOM CHARACTER: " << std::endl;
 	chain.clear();
 	for ( int i = 0 ; i < input.length(); i++)
