@@ -10,7 +10,7 @@ std::string choose;
 int main()
 {
     srand ( time(NULL) );
-    std::string input = "test one two three.";
+    std::string input = "test one test three.";
     std::cout << "Please choose a word to predict: " << std::endl;
     std::cin >> choose;
 	int words = 0; // Holds number of words
@@ -50,7 +50,6 @@ int main()
         {
             counter++;
             final.push_back (arr[x+1]);
-            std::cout << "Pushed back " << std::endl;
             
         }
     int rf = rand() % counter;
