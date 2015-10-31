@@ -48,11 +48,11 @@ int main()
         std::cout << *i << ' ';
     }
     int randomIndex = rand() % pool.size();
-    std::cout << "\n" << "----------------------------------------------" << "\n" << "Predication: " << "\n" << std::endl;
+    std::cout << "\n" << "----------------------------------------------" << "\n" << "Predication: " << std::endl;
 	for (int zz = 0; zz < 1; zz++)
 	    {
     	    randomIndex = rand() % pool.size();
-		    std::cout << pool[randomIndex] << std::endl;
+		    std::cout << "Next character will be: " <<pool[randomIndex] << std::endl;
 		    picker = pool[randomIndex];
 	    }
 		input.erase(remove_if(input.begin(), input.end(), isspace), input.end());
@@ -82,7 +82,7 @@ int main()
                 {
                     i++;
                     chain.push_back ( input[i] );
-                    std::cout << "This character got pushed: " << "\n" << input[i] << std::endl;
+                    //std::cout << "This character got pushed: " << "\n" << input[i] << std::endl;
                 }
         }
       int rf = rand() % chain.size();
