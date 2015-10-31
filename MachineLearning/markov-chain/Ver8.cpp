@@ -21,7 +21,7 @@ int main()
 	srand ( time(NULL) );
 	std::cout << "Please choose a character:  " << std::endl;
 	std::cin >> choose;
-	std::cout << input << std::endl;
+	std::cout << "The setence that will be used: " << input << std::endl;
 	//std::cin >> input;
 	//std::ofstream myfile;
 	//myfile.open ("MachineLearning.txt");
