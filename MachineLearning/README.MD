@@ -4,7 +4,7 @@ A collection of all of my machine learning code I have written.
 
 ## Folder structure
 
-Src is my first ever machine learning project. Counts every character, puts all of the characters into a vector and tries to predict whats going to be the next character. Soon will expand it to a markov chain. Each folder has their own project.
+SRC is my first machine learning program. Everything else is self-explanatory.
 
 ## Contributing guidelines
 
@@ -20,4 +20,4 @@ If you have any issues, don't be afraid to send me a issue.
 
 ## License
 
-[MIT](./LICENSE).
+Insert some mit license.
