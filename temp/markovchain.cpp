@@ -1,70 +1,144 @@
-#include <sstream>
 #include <iostream>
+#include <string>
+#include <algorithm>
+#include <fstream>
+#include <vector>
 #include <stdlib.h>
 #include <time.h>
-#include <string>
-#include <vector>
 
-std::string choose;
+std::string input = "Hello my name is ";
+char choose;
+const char AlphabetLower[26] =
+{
+	'a', 'b', 'c', 'd', 'e', 'f', 'g',
+	'h', 'i', 'j', 'k', 'l', 'm', 'n',
+	'o', 'p', 'q', 'r', 's', 't', 'u',
+	'v', 'w', 'x', 'y', 'z'
+};
 
 int main()
 {
-    srand ( time(NULL) );
-    std::string input = "test one test three.";
-    std::string copy = "test one test three."; 
-	int words = 0; // Holds number of words
-	
-	for(int i = 0; input[i] != '\0'; i++)
+	srand ( time(NULL) );
+	std::cout << "Please choose a character:  " << std::endl;
+	std::cin >> choose;
+	std::cout << "The setence that will be used: " << input << std::endl;
+	//std::cin >> input;
+	std::ofstream myfile;
+	myfile.open ("MachineLearning.txt");
+	std::vector<char> pool;
+	std::vector<char> chain;
+	char picker;
+	for(int z = 0; z < 26;z++)
 	{
-		if (input[i] == ' ') //Checking for spaces
+		size_t n = std::count(input.begin(), input.end(), AlphabetLower[z]);
+		std::cout << AlphabetLower[z] << ": " << n << std::endl;
+		myfile << AlphabetLower[z] << ": " << n << std::endl;
+		if (n > 0)
 		{
-			words++;
-		} 	
+		    for(int xx =0; xx < n; xx++)
+		    {
+		        pool.push_back (AlphabetLower[z]);	
+		    }
+		}
+
 	}
-    
-	std::cout << "The number of words = " << words+1 << std::endl;
-	int n = words+1;
-    std::string arr[n];
-    int i = 0;
-    std::stringstream ssin(input);
-    while (ssin.good() && i < n)
+    std::cout << "The size of the pool is: " << pool.size() << std::endl;
+    for (std::vector<char>::const_iterator i = pool.begin(); i != pool.end(); ++i)
     {
-        ssin >> arr[i];
-        ++i;
+        std::cout << *i << ' ';
     }
-    for(i = 0; i < n; i++)
-    {
-        std::cout << arr[i] << std::endl;
-    }
-    
-    std::vector<std::string> final; 
-    int counter = 0;
-    for(int ff = 0; 0 < 100; ff++)
-    {
-        int RandIndex = rand() % n; 
-        //std::cout << arr[RandIndex] << std::endl;
-    
-        std::string choose = arr[RandIndex];
-        std::cout << "The random word is: " << choose << std::endl;
-        for(int x = 0; x < copy.size(); x++)
+    int randomIndex = rand() % pool.size();
+    std::cout << "\n" << "----------------------------------------------" << "\n" << "Predication: " << std::endl;
+	for (int zz = 0; zz < 1; zz++)
+	    {
+    	    randomIndex = rand() % pool.size();
+		    std::cout << "Next character will be: " <<pool[randomIndex] << std::endl;
+		    picker = pool[randomIndex];
+	    }
+		input.erase(remove_if(input.begin(), input.end(), isspace), input.end());
+        for ( int i = 0 ; i < input.length(); i++)
         {
-            if (arr[x].find(choose, 0) != std::string::npos)
-            {
-                counter++;
-                final.push_back (arr[x+1]);
-            
-            }
-        int rf = rand() % counter;
-        std::cout << "The predict word is: " << final[rf] << std::endl;
-        ff--;
-        final.clear();
+                if ( input[i] == picker)
+                {
+                    i++;
+                    chain.push_back ( input[i] );
+                    std::cout << "This character got pushed:  " << "\n" << input[i] << std::endl;
+                    myfile << "This character got pushed: " << "\n" << input[i] << std::endl;
+                }
         }
     
+    for (std::vector<char>::const_iterator xx = chain.begin(); xx != chain.end(); ++xx)
+    {
+        std::cout << "Chain total: " << "\n " << *xx << ' ';
+        myfile << "Chain total: " << "\n" << *xx << ' ';
     }
+    
+    int ri = rand() % chain.size();
+    std::cout << "\n " << "The machine learning predict will be:  " << chain[ri];
+    std::cout << "\n " << "---------------------------------------------------" << "\n" << "CUSTOM CHARACTER: " << std::endl;
+    std::cout << "The character that you choosed is: " << choose << std::endl;
+	chain.clear();
+	for ( int i = 0 ; i < input.length(); i++)
+        {
+                if ( input[i] == choose)
+                {
+                    i++;
+                    chain.push_back ( input[i] );
+                    std::cout << "This character got pushed: " << "\n" << input[i] << std::endl;
+                    myfile << "This character got pushed: " << "\n" << input[i] << std::endl;
+                }
+        }
+      int rf = rand() % chain.size();
+      std::cout << "The machine learning predict while using the character you have choosen will be:  " << chain[rf];
+      myfile << "The machine learning predict while using the character you have choosen will be: " << chain[rf];
+      std::cout << "\n" << "\n" << "-------------------------------------------------------------------------" << std::endl;
+      std::vector<char> newpool;
+        for ( int i = 0 ; i < input.length(); i++)
+        {
+                if ( input[i] == picker)
+                {
+                    i++;
+                    newpool.push_back ( input[i] );
+                    std::cout << "This character got pushed:  " << "\n" << input[i] << std::endl;
+                    myfile << "This character got pushed: " << "\n" << input[i] << std::endl;
+                }
+        }
+        int rm = rand() % newpool.size();
+        picker = newpool[rm];
+        newpool.clear();
+    for( int ff = 0; ff < input.length(); ff++)
+    {
+        for ( int i = 0; i < input.length(); i++)
+        {
+                if ( input[i] == picker)
+                {
+                    i++;
+                    newpool.push_back ( input[i] );
+                }
 
-    
-    
-  std::cout << "Return " << std::endl;  
-    
-    
+        }
+            int rt = newpool.size();
+            picker = newpool[rt];
+            std::cout << picker;
+            newpool.clear();  
+    }
+        
+        
 }
+
+
+/*
+1. Counts each specific letter
+2. Pushs the amount of letters into a array/vector
+3, Pulls a random letter from the pool
+
+*/
+
+/*
+Explaintions def:
+Total = Counts the total amount of characters in a string. This will be responsible of making the vector/array with that size
+input = String that the user inputted
+Alphabet[z] = Goes through the array of the alphabet. 
+
+
+*/
