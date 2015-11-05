@@ -23,8 +23,8 @@ int main()
 	std::cin >> choose;
 	std::cout << "The setence that will be used: " << input << std::endl;
 	//std::cin >> input;
-	//std::ofstream myfile;
-	//myfile.open ("MachineLearning.txt");
+	std::ofstream myfile;
+	myfile.open ("MachineLearning.txt");
 	std::vector<char> pool;
 	std::vector<char> chain;
 	char picker;
@@ -63,12 +63,14 @@ int main()
                     i++;
                     chain.push_back ( input[i] );
                     std::cout << "This character got pushed:  " << "\n" << input[i] << std::endl;
+                    myfile << "This character got pushed: " << "\n" << input[i] << std::endl;
                 }
         }
     
     for (std::vector<char>::const_iterator xx = chain.begin(); xx != chain.end(); ++xx)
     {
         std::cout << "Chain total: " << "\n " << *xx << ' ';
+        myfile << "Chain total: " << "\n" << *xx << ' ';
     }
     
     int ri = rand() % chain.size();
@@ -83,11 +85,13 @@ int main()
                     i++;
                     chain.push_back ( input[i] );
                     std::cout << "This character got pushed: " << "\n" << input[i] << std::endl;
+                    myfile << "This character got pushed: " << "\n" << input[i] << std::endl;
                 }
         }
       int rf = rand() % chain.size();
-      std::cout << "The machine learning predict while using the character you have choosen will be:  " << chain[rf];        
-	  	std::cin.get();
+      std::cout << "The machine learning predict while using the character you have choosen will be:  " << chain[rf];
+      myfile << "The machine learning predict while using the character you have choosen will be: " << chain[rf];
+      std::cin.get();
 }
 
 
