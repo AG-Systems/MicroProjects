@@ -19,7 +19,7 @@ int main()
         list.push_back (a[i]);
     }
     
-    bool running = true
+    bool running = true;
     while(running)
     {
         if (is_sorted(list.begin(), list.end()) )
@@ -27,8 +27,15 @@ int main()
             running = false;
             break;
         }
-       std::random_shuffle(list_.begin(), list_.end()); 
+       std::random_shuffle(list.begin(), list.end()); 
     }
-    std::cout << "Finished " << std::endl;
-    
+if (is_sorted(list.begin(), list.end()) )
+    {
+        for (int z = 0; z < 8; z++)
+        {
+            std::cout << list[z] << " ";    
+        }
+        std::cout << "\n";
+        std::cout << "Finished " << std::endl;
+    }
 }
