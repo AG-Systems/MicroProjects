@@ -14,5 +14,8 @@ Work on javascript
 
 Work on robotics programming
 
+Work on topcoder
+
+Work on google questions
 
 
