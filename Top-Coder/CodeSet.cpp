@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
+#include <algorithm>
+#include <iterator>
 class codeSet
 {
    public:
@@ -47,6 +48,6 @@ int main()
     }
    std::vector<std::string> bs = getBitStrings(5);
     std::copy(bs.begin(), bs.end(), 
-         std::ostream_iterator<std::string>(std::cout, "\n"));
+    std::ostream_iterator<std::string>(std::cout, "\n"));
    return 0;
 }
