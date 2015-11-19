@@ -45,4 +45,8 @@ int main()
                 
         }
     }
+   std::vector<std::string> bs = getBitStrings(5);
+    std::copy(bs.begin(), bs.end(), 
+         std::ostream_iterator<std::string>(std::cout, "\n"));
+   return 0;
 }
