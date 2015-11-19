@@ -29,6 +29,7 @@ int main()
         }
        std::random_shuffle(list.begin(), list.end()); 
     }
+    std::cout << "\n";
 if (is_sorted(list.begin(), list.end()) )
     {
         for (int z = 0; z < 8; z++)
