@@ -40,14 +40,7 @@ int main()
     
     std::cin >> n;
     std::cin >> favorite;
-    if (n > 0)
-    {
-        for ( int z = 0; z < n; z++)
-        {
-                
-        }
-    }
-   std::vector<std::string> bs = getBitStrings(5);
+   std::vector<std::string> bs = getBitStrings(n);
     std::copy(bs.begin(), bs.end(), 
     std::ostream_iterator<std::string>(std::cout, "\n"));
    return 0;
