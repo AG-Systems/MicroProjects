@@ -4,6 +4,9 @@
 #include <algorithm>
 #include <iterator>
 
+int counter = 0;    
+std::vector<std::string> result;
+std::string final;
 class codeSet
 {
    public:
@@ -37,15 +40,19 @@ int main()
 {
     std::string favorite;
     int n;
-    
     std::cin >> n;
     std::cin >> favorite;
-   std::vector<std::string> bs = getBitStrings(n);
+    std::vector<std::string> bs = getBitStrings(n);
     std::copy(bs.begin(), bs.end(), 
     std::ostream_iterator<std::string>(std::cout, "\n"));
-        if (result.find(favorite) != std::string::npos) 
-        {
-            std::cout << "found!" << '\n';
-        }
-   return 0;
+    if ( std::find(bs.begin(), bs.end(), favorite) != bs.end() )
+    {
+        std::cout << "\n" << "Your favorite word matches this many times: "<< counter << std::endl;    
+        return counter;
+    }
+    else
+    {
+        std::cout << "Nothing matches " << std::endl;
+        return -1;
+    }
 }
