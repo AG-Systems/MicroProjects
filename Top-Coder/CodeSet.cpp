@@ -43,5 +43,9 @@ int main()
    std::vector<std::string> bs = getBitStrings(n);
     std::copy(bs.begin(), bs.end(), 
     std::ostream_iterator<std::string>(std::cout, "\n"));
+        if (result.find(favorite) != std::string::npos) 
+        {
+            std::cout << "found!" << '\n';
+        }
    return 0;
 }
