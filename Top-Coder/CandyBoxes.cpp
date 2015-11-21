@@ -10,10 +10,11 @@ int main ()
     {
         if ( array[i] < smallest )
         {
-             smallest = array[i] ;
+             smallest = array[i];
         }
     }
-    std::cout << smallest << std::endl;
+    std::cout << "Min: "<< smallest << std::endl;
+    
 
     return 0;
 }
