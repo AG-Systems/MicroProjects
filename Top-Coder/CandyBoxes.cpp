@@ -1,16 +1,19 @@
 #include <iostream>
+using namespace std;
 
-int main()
+int main ()
 {
-    int boxes [] = {'7', '21', '14'};
-    int smallest = boxes[0] ;
-        for ( int i=1;  i < sizeof(boxes)/sizeof(boxes[0]);  ++i )
+    int array []= {7,21,14};
+
+    int smallest = array[0] ;
+    for ( int i=1;  i < sizeof(array)/sizeof(array[0]);  ++i )
+    {
+        if ( array[i] < smallest )
         {
-            if ( boxes[i] < smallest )
-            {
-                smallest = boxes[i] ;
-            }
+             smallest = array[i] ;
         }
-    std::cout << "min: " << smallest << '\n' ;           
     }
+    std::cout << smallest << std::endl;
+
+    return 0;
 }
