@@ -2,10 +2,6 @@ Programming ideas:
 
 Money budget site
 
-Finish my essay typer
-
-Expand my machine learning program.
-
 Fix AurigaSpectator program on steam
 
 Make a self changing/writing program
@@ -19,3 +15,12 @@ Work on topcoder
 Work on google questions
 
 Make a hud colour changer for elite dangerous.
+
+Practice c++ class problems
+
+Practice function problems
+
+Learn java 
+
+Learn C#
+
