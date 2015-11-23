@@ -24,3 +24,4 @@ Learn java
 
 Learn C#
 
+Make a script or js that runs in the background to block certain banners
