@@ -25,3 +25,7 @@ Learn java
 Learn C#
 
 Make a script or js that runs in the background to block certain banners
+
+Finsih android app. Fix the fullscreen and remove the banner.
+
+Make a app for google chrome store.
