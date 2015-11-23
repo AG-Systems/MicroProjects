@@ -29,3 +29,7 @@ Make a script or js that runs in the background to block certain banners
 Finsih android app. Fix the fullscreen and remove the banner.
 
 Make a app for google chrome store.
+
+Work on hashtables and hash maps
+
+make a star citzen mmo/rpg clone of elite dangerous 
