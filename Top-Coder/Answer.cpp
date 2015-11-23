@@ -18,10 +18,13 @@ int main()
     {
         for(int x = 0; x <sizeof( words[z] ); x++)
         {
-            if (xtr != words[x])
+            if (words[x].find(xtr) != std::string::npos)
             {
-                //std::replace( words[z].begin(), words[z].end(), 'x', 'y');
-                std::cout << "hello " << std::endl;
+                std::cout << "_" << std::endl;    
+            }
+            else
+            {
+                std::cout << xtr << std::endl;    
             }
         }
     }
