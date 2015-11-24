@@ -11,9 +11,9 @@ int hash::Hash(std::string key)
   
   index = key.length();
   
-  std::cout << "key[0] = " << key[0] << std::endl;
-  std::cout << "key[1] = " << key[1] << std::endl;
-  std::cout << "key[2] = " << key[2] << std::endl;
-  std::cout << "key[3] = " << key[3] << std::endl;
+  std::cout << "key[0] = " << (int)key[0] << std::endl;
+  std::cout << "key[1] = " << (int)key[1] << std::endl;
+  std::cout << "key[2] = " << (int)key[2] << std::endl;
+  std::cout << "key[3] = " << (int)key[3] << std::endl;
   return index;
 }
