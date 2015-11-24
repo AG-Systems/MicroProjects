@@ -21,5 +21,6 @@ int hash::Hash(std::string key)
   std::cout << "key[1] = " << (int)key[1] << std::endl;
   std::cout << "key[2] = " << (int)key[2] << std::endl;
   std::cout << "key[3] = " << (int)key[3] << std::endl;
+  index = hash % tableSize;
   return index;
 }
