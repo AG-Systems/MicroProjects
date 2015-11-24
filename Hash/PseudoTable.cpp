@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-std::vector <std::string> table;
+std::vector <int> table;
 int main()
 {
     
@@ -14,7 +14,7 @@ int main()
         table.push_back (finalstr);
     }
     
-    for (std::vector<std::string>::const_iterator i = table.begin(); i != table.end(); ++i)
+    for (std::vector<int>::const_iterator i = table.begin(); i != table.end(); ++i)
     std::cout << *i << ' ';
     
 }
