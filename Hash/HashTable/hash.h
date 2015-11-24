@@ -11,6 +11,9 @@ class hash
 {
   public:
   int Hash(std::string key);
+  hash();
+  private:
+  int tablesize;
 };
 
 #endif 
