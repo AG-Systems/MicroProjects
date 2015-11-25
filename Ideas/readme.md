@@ -32,4 +32,4 @@ Make a app for google chrome store.
 
 Work on hashtables and hash maps
 
-make a star citzen mmo/rpg clone of elite dangerous 
+make a star citzen mmo/rpg clone of elite dangerousxsite
