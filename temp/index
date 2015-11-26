@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<title>ParallecScrolling</title>
+<style type="text/css">
+	*{
+	margin: 0px;
+	padding: 0px;
+	}
+	#image {
+		position: relative;
+		z-index: -1
+	}
+	#content {
+		height: 750px;
+		width: 100%;
+		margin-top:-10px;
+		background-color:#0d0d0d;
+		position: relative;
+		z-index: 1;
+	}
+</style>
+
+
+<body>
+<!-- <img id="image" src="img/bg.jpg" height="710px" width="100%" /> -->
+<script type="text/javascript">
+	var ypos,image;
+	function parallex() {
+		image = document.getElementById('image');
+		ypos = window.pageYOffset;
+		image.style.top = ypos * .7+ 'px';
+	}
+	window.addEventListener('scroll', parallex),false;
+
+</script>
+</head>
+
+<script type="text/javascript">
+ var imlocation = "img/";
+ var currentdate = 0;
+ var image_number = 0;
+ function ImageArray (n) {
+   this.length = n;
+   for (var i =1; i <= n; i++) {
+     this[i] = ' '
+   }
+ }
+ image = new ImageArray(6)
+ image[0] = 'bg.jpg'
+ image[1] = 'bg2.jpg'
+ image[2] = 'bg3.jpg'
+ image[3] = 'bg4.jpg'
+ image[4] = 'bg5.jpg'
+ image[5] = 'bg6.jpg'
+
+ var rand = 60/image.length
+ function randomimage() {
+ 	currentdate = new Date()
+ 	image_number = currentdate.getSeconds()
+ 	image_number = Math.floor(image_number/rand)
+ 	return(image[image_number])
+ }
+ var insert = imlocation + randomimage();
+ document.write("<img src='" + insert+ "'>");
+</script>
+<div id="content"></div>
+
+
+</body>
