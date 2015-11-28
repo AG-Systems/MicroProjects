@@ -24,8 +24,19 @@ int main()
     srand ( time(NULL) );
     std::vector <char> list;
     std::vector <char> password;
-    std::cout << "Please type 1 for yes or 0 for no on the following: Lowercase : Uppercase : Digits : Puncation marks : Similar characters : Length " << std::endl;
-    std::cin >> lower >> upper >> digi >> marks, >> sim >> length;
+    std::cout << "Please type 1 for yes or 0 for no on the following: Lowercase : Uppercase : Digits : Puncation marks : Similar characters : Length ";
+    //std::cin >> lower >> upper >> digi >> marks >> sim >> length;
+    // test
+    
+    
+    lower = 1;
+    upper = 1;
+    digi = 1;
+    marks = 1;
+    sim = 1;
+    length = 5;
+    
+    
     for (int z = 0; 0 < length; z++)
     {
         if (lower == 1)
@@ -54,9 +65,9 @@ int main()
         }
         int randomVector = rand() % list.size();
         password.push_back (list[randomVector]);
-        list.clear();
+        //list.clear();
     }
     for (std::vector<char>::const_iterator i = password.begin(); i != password.end(); ++i)
-    tsd::cout << *i << ' ';
+    std::cout << *i << ' ';
     
 }
