@@ -1,14 +1,10 @@
 New website
 
-    (HARD)Work on replacing strings between the <p> tags and the </p>.
+    Work on the algorithm a bit more
     
     Make it so it keeps running.
     
-    Make it fetch articles
-    
-    (HARD) Summarize the text.
-    
-    Figure out how to overwrite files on a linux server
+    (HARD) Summarize the text NICELY.
     
     Make the tech page better
     
