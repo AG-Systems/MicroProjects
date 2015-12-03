@@ -37,3 +37,7 @@ make a star citzen mmo/rpg clone of elite dangerous
 Fix site
 
 Make a site that you post your notes online and asign tags for note magement and note finding.
+
+Fix the algorithm of xauriga
+
+Figure out how to make a achrive blog post
