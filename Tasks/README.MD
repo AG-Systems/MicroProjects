@@ -4,8 +4,6 @@ New website
     
     Make it so it keeps running.
     
-    (HARD) Summarize the text NICELY.
-    
     Make the tech page better
     
     Work on different sections. 
