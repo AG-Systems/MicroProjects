@@ -5,6 +5,7 @@
 
 std::vector <char> list;
 std::vector <char> auriga;
+const char slash = ".";
 const char AlphabetLower[26] =
 {
 	'a', 'b', 'c', 'd', 'e', 'f', 'g',
@@ -29,12 +30,18 @@ int main()
 		}
 	}
 	
-for(int g = 0;	
+for(int g = 0; g < orignal.size(); g++)
+{
     for(int z = 0; z < orignal.size(); z++)
     {
         if(list[g] != list[z])
         {
-            auriga.push_back (".")
+            auriga.push_back (slash);
+        }
+        else if(list[g] == list[z])
+        {
+            auriga.push_back (list[g]);    
         }
     }
+}
 }
