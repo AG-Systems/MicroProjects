@@ -4,7 +4,7 @@
 #include <algorithm>
 
 std::vector <char> list;
-
+std::vector <char> auriga;
 const char AlphabetLower[26] =
 {
 	'a', 'b', 'c', 'd', 'e', 'f', 'g',
@@ -20,10 +20,21 @@ int main()
 	{
 	    size_t n = std::count(orignal.begin(), orignal.end(), AlphabetLower[z]);
 		std::cout << AlphabetLower[z] << ": " << n << std::endl;
-		if (n == 1)
+		if (n > 0)
 		{
+		    for(int xx =0; xx < n; xx++)
+		    {
+		        list.push_back (AlphabetLower[z]);	
+		    }
+		}
+	}
+	
+for(int g = 0;	
     for(int z = 0; z < orignal.size(); z++)
     {
-        
+        if(list[g] != list[z])
+        {
+            auriga.push_back (".")
+        }
     }
 }
