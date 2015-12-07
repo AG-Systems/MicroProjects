@@ -12,6 +12,8 @@ New website
     
     Put rotating images.
     
+    Fix parrlex scrolling
+    
 Physics Site
     
     Work on front end??
