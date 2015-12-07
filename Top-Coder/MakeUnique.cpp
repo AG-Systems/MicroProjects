@@ -5,7 +5,7 @@
 
 std::vector <char> list;
 std::vector <char> auriga;
-const char slash = ".";
+const char slash = '.';
 const char AlphabetLower[26] =
 {
 	'a', 'b', 'c', 'd', 'e', 'f', 'g',
