@@ -4,6 +4,10 @@ New website
     
     Work on different sections. 
     
+    Work on contact page
+    
+    Work on about me page
+    
     Start learning php and learn databases and active dynamic pages.
     
     Put rotating images.
