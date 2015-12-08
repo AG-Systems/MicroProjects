@@ -1,11 +1,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <algorithm>
-
+ 
 std::vector <char> list;
-std::vector <char> auriga;
-const char slash = '.';
 const char AlphabetLower[26] =
 {
 	'a', 'b', 'c', 'd', 'e', 'f', 'g',
@@ -13,35 +10,35 @@ const char AlphabetLower[26] =
 	'o', 'p', 'q', 'r', 's', 't', 'u',
 	'v', 'w', 'x', 'y', 'z'
 };
-
+ 
+std::string input = "abbbxcxabcx";
+// ABBBXCXABCX
+ 
+int counter = 0;
+ 
 int main()
 {
-    std::string orignal = "ABBBXCXABCX";
-    for(int z = 0; z < 26;z++)
+ 
+	for(int x = 0; x < input.length(); x++)
 	{
-	    size_t n = std::count(orignal.begin(), orignal.end(), AlphabetLower[z]);
-		std::cout << AlphabetLower[z] << ": " << n << std::endl;
-		if (n > 0)
+		for(int v = 0; v < input.length(); v++)
 		{
-		    for(int xx =0; xx < n; xx++)
-		    {
-		        list.push_back (AlphabetLower[z]);	
-		    }
+			if(input[x] == input[x + v])
+    		{
+				counter++;
+				if (counter > 1)
+				{
+					list.push_back('.');
+					int counter = 0;
+				}
+ 
+        	}
+        	else if (input[x] != input[x + v])
+    		{
+    			list.push_back(input[x]);		
+    		}
 		}
-	}
-	
-for(int g = 0; g < orignal.size(); g++)
-{
-    for(int z = 0; z < orignal.size(); z++)
-    {
-        if(list[g] != list[z])
-        {
-            auriga.push_back (slash);
-        }
-        else if(list[g] == list[z])
-        {
-            auriga.push_back (list[g]);    
-        }
-    }
-}
+ 	}
+for (std::vector<char>::const_iterator i = list.begin(); i != list.end(); ++i)
+    std::cout << *i << ' ';
 }
