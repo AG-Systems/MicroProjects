@@ -16,6 +16,8 @@ New website
     
     Work django practice
     
+    Fix the blog django
+    
 Physics Site
     
     Work on front end??
