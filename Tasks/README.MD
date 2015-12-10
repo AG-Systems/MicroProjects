@@ -12,7 +12,9 @@ New website
     
     Put rotating images.
     
-    Fix parrlex scrolling
+    Fix parrlex scrolling.
+    
+    Work django practice
     
 Physics Site
     
