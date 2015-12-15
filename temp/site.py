@@ -32,7 +32,7 @@ while( -1 < n):
         summary = first_article.summary
         author = first_article.authors
         urll = first_article.url
-        slash = " \ "
+        print "attempt"
         with open('blogs.json', 'r+') as f:
             data = json.load(f)
             #data['id'] = 134 # <--- add `id` value.
@@ -41,6 +41,8 @@ while( -1 < n):
             json.dump(data, f)
         n += 1
         print "finished"
+        time.sleep(10)
     except:
         pass
         print "ERROR!!"
+        time.sleep(10)
