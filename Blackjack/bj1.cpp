@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <ctime>
-using namespace std;
+
 
 // names of ranks.
 static const char *ranks[] =
@@ -18,7 +18,7 @@ static const char *suits[] =
 
 void print_card(int n)
 {
-    cout << ranks[n % 13] << " of " << suits[n / 13] << endl;
+    std::cout << ranks[n % 13] << " of " << suits[n / 13] << std::endl;
 }
 
 int main()
@@ -29,8 +29,8 @@ int main()
 
     // Prime, shuffle, dump
     for (int i=0;i<52;deck[i++]=i);
-    random_shuffle(deck, deck+52);
-    for_each(deck, deck+52, print_card);
+    std::random_shuffle(deck, deck+52);
+    std::for_each(deck, deck+52, print_card);
 
     return 0;
 }
