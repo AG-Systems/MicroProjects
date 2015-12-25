@@ -31,6 +31,6 @@ int main()
     for (int i=0;i<52;deck[i++]=i);
     std::random_shuffle(deck, deck+52);
     std::for_each(deck, deck+52, print_card);
-
+	std::cin.get();
     return 0;
 }
