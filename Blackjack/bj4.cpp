@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
-int dealer;
+#include <Windows.h>
+
+int dealer = 5;
 int a[] = {1,2,3,4,5,6,7,8,9};
 int numcards;
 int total;
@@ -18,31 +20,31 @@ int arr[7][9] =
 
 int playerhand(int a)
 {
-    if(total <= 11)
+    if(a <= 11)
     {
-        return arr[dealer][0];    
+        return arr[1][dealer];
     }
-    else if (total == 12)
+    else if (a == 12)
     {
-        return arr[dealer][1];   
+        return arr[2][dealer];
     }
-    else if (total == 13)
+    else if (a == 13)
     {
-        return arr[dealer][2];    
+        return arr[3][dealer];
     }
-    else if (total == 14)
+    else if (a == 14)
     {
-        return arr[dealer][3];    
+        return arr[4][dealer];
     }
-    else if (total == 15)
+    else if (a == 15)
     {
-        return arr[dealer][4];    
+        return arr[5][dealer];
     }
-    else if (total == 16)
+    else if (a == 16)
     {
-        return arr[dealer][5];        
+        return arr[6][dealer];
     }
-    else if (total >= 17)
+    else if (a >= 17)
     {
         return 0;    
     }
@@ -79,15 +81,17 @@ int main()
      std::cin >> dealer;
      
   }
-  if(playerhand(total) == 0)
+  int z = playerhand(total);
+  std::cout << z << std::endl;
+  if(z == 0)
   {
     std::cout << "fold" << std::endl;    
   }
-  else if (playerhand(total) == 1)
+  else if (z == 1)
   {
     std::cout << "hitme " << std::endl;    
   }
-  std::cin.get();
+  system("PAUSE");
 }
 
 /*
