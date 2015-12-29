@@ -8,4 +8,9 @@ int main()
   std::cout << "How many cards is there:  " << std::endl;
   std::cin >> numcards;
   std::cout << "What are the cards: "
+  for(int z = 0; z < numcards; z++)
+  {
+    std::cin >> a[numcards];
+  }
+  
 }
