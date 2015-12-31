@@ -41,3 +41,5 @@ A site that has science central.
 A program or site that you input your 2 blackajack cards and determine if you should hold or hit me.  Maybe you can keep doing it.
 
 A desktop application that connects orign,steam, and uplay togeather.
+
+Make a paint/drawing program.
