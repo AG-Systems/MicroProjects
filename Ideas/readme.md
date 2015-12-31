@@ -39,3 +39,5 @@ Make a site that you post your notes online and asign tags for note magement and
 A site that has science central.
 
 A program or site that you input your 2 blackajack cards and determine if you should hold or hit me.  Maybe you can keep doing it.
+
+A desktop application that connects orign,steam, and uplay togeather.
