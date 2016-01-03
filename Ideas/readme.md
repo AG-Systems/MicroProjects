@@ -43,3 +43,5 @@ A program or site that you input your 2 blackajack cards and determine if you sh
 A desktop application that connects orign,steam, and uplay togeather.
 
 Make a paint/drawing program.
+
+Top tier league of legends cheat sheet that gets updated daily with win rate
