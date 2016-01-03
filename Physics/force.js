@@ -21,9 +21,9 @@ $(document).ready(function()
     var counter = 0;
  $('#add').on('click', function(e)
  {
-        counter++;
         if(counter < 3)
         {
+            counter++;
             $("#forceForm").clone().appendTo(".col-xs-12");
         };
     });
@@ -35,4 +35,8 @@ $(document).ready(function()
           $("#forceForm").remove();
         };
     });
+        $('#calculate').on('click', function(e){
+         e.preventDefault();
+         $('#dvatForm').submit();
+     });
 });
