@@ -37,6 +37,6 @@ $(document).ready(function()
     });
         $('#calculate').on('click', function(e){
          e.preventDefault();
-         $('#dvatForm').submit();
+         $('#forceForm').submit();
      });
 });
