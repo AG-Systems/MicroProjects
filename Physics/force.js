@@ -28,6 +28,15 @@ $(document).ready(function() {
                 clone.children().val("");
 
                 $(this).parent().append(clone);
+                $('input').eq(0).attr('name', '0force');
+                $('input').eq(1).attr('name', '0angle');
+                $('input').eq(2).attr('name', '1force');
+                $('input').eq(3).attr('name', '1angle');
+                $('input').eq(4).attr('name', '2force');
+                $('input').eq(5).attr('name', '2angle');
+                $('input').eq(6).attr('name', '3force');
+                $('input').eq(7).attr('name', '3angle');
+
                 if (counter == 0) {
                     $("b:eq(1)").html("<b> Force 2</b>");
                 };
