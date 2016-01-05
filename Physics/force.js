@@ -1,6 +1,4 @@
-
-$.fn.serializeObject = function()
-{
+$.fn.serializeObject = function() {
     var o = {};
     var a = this.serializeArray();
     $.each(a, function() {
@@ -16,27 +14,45 @@ $.fn.serializeObject = function()
     return o;
 };
 
-$(document).ready(function()
-{
+$(document).ready(function() {
     var counter = 0;
- $('#add').on('click', function(e)
- {
-        if(counter < 3)
-        {
+    var MAX_FIELDS = 3;
+    var form = $('.force-group');
+
+    $('#add').on('click', function(e) {
+        if (counter < MAX_FIELDS) {
+            //$(".form-group").clone().appendTo("#forceForm");
+            $.each(form, function(i) {
+                var clone = $('.force-group').first().clone();
+                clone.children().val("");
+
+                $(this).parent().append(clone);
+                if (counter == 0) {
+                    $("b:eq(1)").html("<b> Force 2</b>");
+                };
+                if (counter == 1) {
+                    $("b:eq(3)").html("<b> Force 3</b>");
+                };
+                if (counter == 2) {
+                    $("b:eq(5)").html("<b> Force 4</b>");
+                };
+
+            });
             counter++;
-            $("#forceForm").clone().appendTo(".col-xs-12");
         };
     });
- $('#remove').on('click', function(e)
- {
-        if(counter > 0)
-        {
-          counter--;
-          $("#forceForm").remove();
+    $('#remove').on('click', function(e) {
+        if (counter > MAX_FIELDS) {
+            e.preventDefault();
+            $(".form-group").last().remove;
+            $.each(form, function(i) {
+                $(this).children().last().remove();
+            });
+            counter--;
         };
     });
-        $('#calculate').on('click', function(e){
-         e.preventDefault();
-         $('#forceForm').submit();
-     });
+    $('#calculate').on('click', function(e) {
+        e.preventDefault();
+        $('#forceForm').submit();
+    });
 });
