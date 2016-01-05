@@ -94,47 +94,47 @@
                         <h4 class="2d-text-center" id="2d-form-title"><strong>Input</strong></h4>
                         <div class="2d-form-group dvat-group">
                             <label class = "control-label col-md-2">&#916;x</label>
-                            <div class = "col-md-4 dvat-info">
+                            <div class = "col-md-4 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0distance" autocomplete="off">
                             </div>
                             <label class = "control-label col-md-2">&#916;y</label>
-                            <div class = "col-md-4 dvat-info">
+                            <div class = "col-md-4 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0distance" autocomplete="off">
                             </div>
                         </div>
                         <div class="2d-form-group dvat-group">
                             <label class = "control-label col-md-2">v<sub>x</sub><sub>0</sub></label>
-                            <div class = "col-md-4 dvat-info">
+                            <div class = "col-md-4 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0initialVelocity" autocomplete="off">
                             </div>
                             <label class = "control-label col-md-2">v<sub>y</sub><sub>0</sub></label>
-                            <div class = "col-md-4 dvat-info">
+                            <div class = "col-md-4 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0initialVelocity" autocomplete="off">
                             </div>
                         </div>
                         <div class="2d-form-group dvat-group">
                             <label class = "control-label col-md-2">v<sub>x</sub><sub>f</sub></label>
-                            <div class = "col-md-4 dvat-info">
+                            <div class = "col-md-4 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0finalVelocity" autocomplete="off">
                             </div>
                             <label class = "control-label col-md-2">v<sub>y</sub><sub>f</sub></label>
-                            <div class = "col-md-4 dvat-info">
+                            <div class = "col-md-4 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0finalVelocity" autocomplete="off">
                             </div>
                         </div>
                         <div class="2d-form-group dvat-group">
                             <label class = "control-label col-md-2">a<sub>x</sub></label>
-                            <div class = "col-md-4 dvat-info">
+                            <div class = "col-md-4 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0acceleration" autocomplete="off">
                             </div>
                             <label class = "control-label col-md-2">a<sub>y</sub></label>
-                            <div class = "col-md-4 dvat-info">
+                            <div class = "col-md-4 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0acceleration" autocomplete="off">
                             </div>
                         </div>
                         <div class="2d-form-group dvat-group">
                             <label class = "control-label col-md-2">&#916;t</label>
-                            <div class = "col-md-10 dvat-info">
+                            <div class = "col-md-10 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0time" autocomplete="off">
                             </div>
                         </div>
@@ -190,25 +190,25 @@
                         <h4 class="2d-text-center" id="form-title"><strong>Input</strong></h4>
                         <div class="motion-form-group dvat-group">
                             <label class = "control-label col-md-2">v</label>
-                            <div class = "col-md-10 dvat-info">
+                            <div class = "col-md-10 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0initialVelocity" autocomplete="off">
                             </div>
                         </div>
                         <div class="motion-form-group dvat-group">
                             <label class = "control-label col-md-2">r</label>
-                            <div class = "col-md-10 dvat-info">
+                            <div class = "col-md-10 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0finalVelocity" autocomplete="off">
                             </div>
                         </div>
                         <div class="motion-form-group dvat-group">
                             <label class = "control-label col-md-2">a</label>
-                            <div class = "col-md-10 dvat-info">
+                            <div class = "col-md-10 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0acceleration" autocomplete="off">
                             </div>
                         </div>
                         <div class="motion-form-group dvat-group">
                             <label class = "control-label col-md-2">&#916;t</label>
-                            <div class = "col-md-10 dvat-info">
+                            <div class = "col-md-10 2d-dvat-info">
                                 <input type = "text" class="form-control" name="0time" autocomplete="off">
                             </div>
                         </div>
