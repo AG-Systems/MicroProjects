@@ -71,7 +71,7 @@ $(document).ready(function() {
            forced.stages = counter;
            $.post('/force/solve', forced, function(res){
                if (res !== "error"){
-                   var dvat = JSON.parse(res);
+                   var forced = JSON.parse(res);
                    var tableElements = $('#forceChart').find('tr');
 
                    for (var i = 0; i < tableElements.length; i++){
