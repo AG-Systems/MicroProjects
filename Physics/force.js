@@ -17,6 +17,7 @@ $.fn.serializeObject = function() {
 $(document).ready(function() {
     var counter = 0;
     var MAX_FIELDS = 3;
+    var MIN_FIELDS = 1;
     var form = $('.force-group');
 
     $('#add').on('click', function(e) {
@@ -42,14 +43,13 @@ $(document).ready(function() {
         };
     });
     $('#remove').on('click', function(e) {
-        if (counter > MAX_FIELDS) {
-            e.preventDefault();
-            $(".form-group").last().remove;
-            $.each(form, function(i) {
-                $(this).children().last().remove();
-            });
-            counter--;
-        };
+        e.preventDefault();
+        if(counter >= MIN_FIELDS){
+            $.each(form, function(i){
+            $('#forceForm').children().children().last().remove();
+        });
+        counter--;
+        }
     });
     $('#calculate').on('click', function(e) {
         e.preventDefault();
