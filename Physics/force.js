@@ -64,4 +64,37 @@ $(document).ready(function() {
         e.preventDefault();
         $('#forceForm').submit();
     });
+       $('#forceForm').on( 'submit', function(e){
+           e.preventDefault();
+
+           var forced = $('#forceForm').serializeObject();
+           forced.stages = counter;
+           $.post('/force/solve', forced, function(res){
+               if (res !== "error"){
+                   var dvat = JSON.parse(res);
+                   var tableElements = $('#forceChart').find('tr');
+
+                   for (var i = 0; i < tableElements.length; i++){
+                       tableElements.eq(i).children().slice(1).remove();
+                   }
+
+                   for (var i = 0; i < forced.length; i++){
+                       tableElements.eq(0).append('<th class="head-pad">' + "Stage " + (i+1) +'</th>');
+                       tableElements.eq(1).append('<td class="pad">' + forced[i].magnitude + '</td>');
+                       tableElements.eq(2).append('<td class="pad">' + forced[i].angle + '</td>');
+                       //tableElements.eq(3).append('<td class="pad">' + dvat[i].finalVelocity + '</td>');
+                       //tableElements.eq(4).append('<td class="pad">' + dvat[i].acceleration + '</td>');
+                       //tableElements.eq(5).append('<td class="pad">' + dvat[i].time + '</td>');
+                   }
+                   $('.force-info').parent().removeClass('has-error');
+               }else{
+                   var tableElements = $('#forceChart').find('tr');
+
+                   for (var i = 0; i < tableElements.length; i++){
+                       tableElements.eq(i).children().slice(1).remove();
+                   }
+                   $('.force-info').parent().addClass('has-error');
+               }
+           })
+       })
 });
