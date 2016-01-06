@@ -49,12 +49,11 @@ $(document).ready(function() {
         forceJSON.numOfForces = numOfForces;
         $.post('/force/solve', forceJSON, function(res){
             console.log(res);
-            var mangi = res.magnitude;
-            var anglex = res.xNetForce;
-            var angley = res.yNetForce;
-            var dir = res.direction;
-         tableElements.eq(1).append('<td class="pad"> Net Force: ' + mangi + '</td>');
-         tableElements.eq(2).append('<td class="pad"> Direction: ' + dir + '</td>');;
+            var JsonObject= JSON.parse(res);
+            var mangi = JsonObject.magnitude;
+            var dir = JsonObject.direction;
+         tableElements.eq(1).append('<b">  ' + mangi + '</b>');
+         tableElements.eq(2).append('<b">  ' + dir + '</b>');;
 
 
         });
