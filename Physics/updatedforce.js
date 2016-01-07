@@ -52,8 +52,8 @@ $(document).ready(function() {
             var JsonObject= JSON.parse(res);
             var mangi = JsonObject.magnitude;
             var dir = JsonObject.direction;
-         tableElements.eq(1).append('<b">  ' + mangi + '</b>');
-         tableElements.eq(2).append('<b">  ' + dir + '</b>');;
+         tableElements.eq(1).append('<b>  ' + mangi + '</b>');
+         tableElements.eq(2).append('<b>  ' + dir + '</b>');;
 
 
         });
