@@ -1,5 +1,4 @@
-$.fn.serializeObject = function()
-{
+$.fn.serializeObject = function() {
     var o = {};
     var a = this.serializeArray();
     $.each(a, function() {
@@ -15,7 +14,7 @@ $.fn.serializeObject = function()
     return o;
 };
 
-$(document).ready(function(){
+$(document).ready(function() {
 
     var form = $('.ucm-group');
     var inputLengthInCol = 10;
@@ -25,11 +24,11 @@ $(document).ready(function(){
         $('#ucmForm').submit();
     });
 
-    $('#ucmForm').on('submit', function(e){
+    $('#ucmForm').on('submit', function(e) {
         e.preventDefault();
         var forceJSON = $('#ucmForm').serializeObject();
-        $.post('/motion/ucm', forceJSON, function(res){
-            if (res.indexOf('error') == -1){
+        $.post('/motion/ucm', forceJSON, function(res) {
+            if (res.indexOf('error') == -1) {
                 var um = JSON.parse(res);
                 console.log(res);
                 $('#velocity').text(um.velocity);
