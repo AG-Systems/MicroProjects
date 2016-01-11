@@ -43,3 +43,5 @@ Make a paint/drawing program.
 Top tier league of legends cheat sheet that gets updated daily with win rate
 
 Dota theory crafting.
+
+Cs go random strat generaltor. Strat rouleetee.
