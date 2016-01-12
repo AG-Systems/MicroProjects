@@ -47,3 +47,6 @@ Dota theory crafting.
 Cs go random strat generaltor. Strat rouleetee.
 
 Dota 2 timers.
+
+Bot text generator app
+
