@@ -16,7 +16,10 @@ int main()
 
   for(int x = 0; x < 4; x++)
   {
-       
+      if(secret_santa != a[x])
+      {
+          id[x]
+      }     
   }    
 
 }
