@@ -17,13 +17,8 @@ int main()
   {
       if(secret_santa != a[x] && secret_santa != a[x+1])
       {
-          if(id[x] != 1 && id[x+1] != 1 && id[x] != 2)
-          {
-            std::cout << a[x] << "-->" << a[x+1] << std::endl;
-            int id[x] == 2;
-            int id[x + 1] == 2;
-          }
-      }     
+        
+      }
   }    
 
 }
