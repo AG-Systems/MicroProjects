@@ -24,10 +24,28 @@ for(int x = 0; x < 4; x++)
             id[x] == 2;
         }
         
+        if(id[x] == 1)
+        {
+            if(id[x+1] != 1)
+            {
+                std::cout << a[x] << "-->" << a[x-1] << std::endl;    
+            }
+        }
+        if(id[x] == 2)
+        {
+            std::cout << "relooping" << std::endl;    
+        }
+        
     }
     if(secret_santa != "Joe")
     {
-            
+        if(x == 1)
+        {
+            for(int i = 0; i < 4; i++)
+            {
+                    
+            }
+        }
     }
 }
   
