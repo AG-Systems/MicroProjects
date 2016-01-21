@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
+#include <vector>
 
 int main()
 {
@@ -12,7 +13,24 @@ int main()
   int secret_santa_id = id[RandIndex];
   std::cout << secret_santa << std::endl;
   std::cout << secret_santa_id << std::endl;
-
-    
+  
+for(int x = 0; x < 4; x++)
+{
+    if(secret_santa == "Joe")
+    {
+        if(id[x] != 1)
+        {
+            std::cout << a[x] << "-->" << a[x+1] << std::endl;
+            id[x] == 2;
+        }
+        
+    }
+    if(secret_santa != "Joe")
+    {
+            
+    }
+}
+  
+     
 
 }
