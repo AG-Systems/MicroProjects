@@ -41,13 +41,42 @@ for(int x = 0; x < 4; x++)
     }
     if(secret_santa != "Joe")
     {
-        if(x == 1)
-        {
-
-        }
+            if(RandomOrder == 2)
+            {
+                if(id[x] == 0)
+                {
+                    std::cout << a[x+1] << "-->" <<a[x+2] << std::endl;
+                }
+                if(id[x] == 1)
+                {
+                    if(id[x+1] == 0)
+                    {
+                        std::cout << a[x+1] << "-->" <<a[x+2] << std::endl;                    
+                    }
+                    if(id[x+1] == 1)
+                    {
+                        x++;    
+                    }
+                }
+            }
+            if(RandomOrder == 3)
+            {
+                if(id[x] == 0)
+                {
+                    std::cout << a[x+2] << "-->" <<a[x+3] << std::endl;
+                }
+                if(id[x] == 1)
+                {
+                    if(id[x+2] == 0)
+                    {
+                        std::cout << a[x+2] << "-->" <<a[x+3] << std::endl;                    
+                    }
+                    if(id[x+1] == 1)
+                    {
+                        x++;    
+                    }        
+            }
     }
 }
-  
-     
 
-}
+// This is a hard challenge.
