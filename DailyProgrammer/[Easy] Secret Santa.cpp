@@ -10,6 +10,7 @@ int main()
   int id[4] = {0,1,1,0};
   int order[4] = {1,2,3,4};
   int RandIndex = rand() % 4; 
+  int counter = 0;
   std::string secret_santa = a[RandIndex];
   int secret_santa_id = id[RandIndex];
   int RandomOrder = order[RandIndex];
@@ -63,6 +64,7 @@ for(int x = 0; x < 4; x++)
             {
                 if(id[x] == 0)
                 {
+                    
                     std::cout << a[x+2] << "-->" <<a[x+3] << std::endl;
                 }
                 if(id[x] == 1)
@@ -78,5 +80,3 @@ for(int x = 0; x < 4; x++)
             }
     }
 }
-
-// This is a hard challenge.
