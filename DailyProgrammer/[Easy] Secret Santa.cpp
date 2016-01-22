@@ -8,9 +8,11 @@ int main()
   srand ( time(NULL) );
   std::string a[4] = {"Joe", "Jeff", "Jerry", "Johnson"};
   int id[4] = {0,1,1,0};
+  int order[4] = {1,2,3,4};
   int RandIndex = rand() % 4; 
   std::string secret_santa = a[RandIndex];
   int secret_santa_id = id[RandIndex];
+  int RandomOrder = order[RandIndex];
   std::cout << secret_santa << std::endl;
   std::cout << secret_santa_id << std::endl;
   
@@ -18,7 +20,7 @@ for(int x = 0; x < 4; x++)
 {
     if(secret_santa == "Joe")
     {
-        if(id[x] != 1)
+        if(id[x] == 0)
         {
             std::cout << a[x] << "-->" << a[x+1] << std::endl;
             id[x] == 2;
@@ -41,10 +43,7 @@ for(int x = 0; x < 4; x++)
     {
         if(x == 1)
         {
-            for(int i = 0; i < 4; i++)
-            {
-                    
-            }
+
         }
     }
 }
