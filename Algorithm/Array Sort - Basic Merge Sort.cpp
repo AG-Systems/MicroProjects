@@ -1,20 +1,19 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <algorithm> 
 
+class list
+{
+    public:
+    std::vector <int> list {1,2,3,4,5,6,7,8};
+};
 
+int fun(std::vector <int> a{1,2,3,4,5,6,7,8})
+{
+  std::vector<T> a2(a.begin(), a.begin() + a.size()/2),
+               a3(a.begin() + a.size()/2, a.end());  
+}
 int main()
 {
-	std::vector <int> list {1,2,3,4,5,6,7,8};
-	int n = list.size();
-	if(list.size() / 2 )
-	{
-		for(int x = 0; x < n; x++)
-		{
-			std::size_t const half_size = list.size() / 2;
-			std::vector<int> split_lo(list.begin(), list.begin() + half_size);
-			std::vector<int> split_hi(list.begin() + half_size, list.end());
-		}
-		
-	}
+    
 }
