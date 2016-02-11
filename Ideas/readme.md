@@ -44,7 +44,7 @@ Top tier league of legends cheat sheet that gets updated daily with win rate
 
 Dota theory crafting. 
 
-Cs go random strat generaltor. Strat rouleetee.
+Cs go random strat generaltor. Strat roulette.
 
 Dota 2 timers.
 
@@ -61,4 +61,4 @@ Anime copy pasta site where people can sudmit.
 Search engine
 
 
-
+ 
