@@ -60,5 +60,7 @@ Anime copy pasta site where people can sudmit.
 
 Search engine
 
+Eve online style site with the market
+
 
  
