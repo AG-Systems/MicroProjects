@@ -75,3 +75,5 @@ Learn androidtesting
 Learn crypto
 
 Learn reverse engineering
+
+Fix github sync issue with xauriga. Extremely annoying as I got tons of things I need to comit.
