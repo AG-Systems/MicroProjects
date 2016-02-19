@@ -68,8 +68,6 @@ Work on angulerjs
 
 Crack into android bootloader att note 4
 
-Make a pressentation 
-
 Learn androidtesting
 
 Learn crypto
