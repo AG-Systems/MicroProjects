@@ -75,3 +75,7 @@ Learn crypto
 Learn reverse engineering
 
 Make eve online ad listing site market thing.
+
+Learn machine learning
+
+Chrono app
