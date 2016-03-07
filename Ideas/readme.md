@@ -83,3 +83,5 @@ Chrono android app
 Public scheduling tool (Add time,date,name) with countdown timer sorted in chrono order.
 
 Stock market bot 
+
+Make a desktop stock tracker
