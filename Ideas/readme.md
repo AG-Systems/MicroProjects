@@ -85,3 +85,5 @@ Public scheduling tool (Add time,date,name) with countdown timer sorted in chron
 Stock market bot 
 
 Make a desktop stock tracker
+
+Make a buisness store.
