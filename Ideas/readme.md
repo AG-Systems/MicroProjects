@@ -87,3 +87,5 @@ Stock market bot
 Make a desktop stock tracker
 
 Make a buisness store.
+
+Make site sorta like thisiswhyimbroke.com 
