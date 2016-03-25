@@ -92,4 +92,4 @@ Make site sorta like thisiswhyimbroke.com
 
 appidea app
 
-Better version of soundcloud.
+Better version of soundcloud mobile app.
