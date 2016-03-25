@@ -91,3 +91,5 @@ Make a buisness store.
 Make site sorta like thisiswhyimbroke.com 
 
 appidea app
+
+Better version of soundcloud.
