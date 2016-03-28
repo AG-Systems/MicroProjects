@@ -95,3 +95,5 @@ appidea app
 Better version of soundcloud mobile app.
 
 Stack game ai 
+
+programing mobile problems
