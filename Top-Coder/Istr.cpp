@@ -30,8 +30,9 @@ int Istr::count(std::string str, int x)
 	    int counter = 0;
 	    for(int i = 0; i < 26; i++)
 	    {
-	        int counter += list[i];        
+	        counter += list[i];        
 	    }
+	    std::cout << "Value of the string is: " << counter << std::endl;
 	    return counter;
 	}
 	
