@@ -17,13 +17,22 @@ public:
 };
 int Istr::count(std::string str, int x)
 {
-	std::vectr <int> list;
+	std::vector <int> list;
 	for(int z = 0; z < 26;z++)
 	{
 		size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
 		std::cout << AlphabetLower[z] << ": " << n << std::endl;
 		int zz = n * n;
 		list.push_back (zz);
+	}
+	if(x == 0)
+	{
+	    int counter = 0;
+	    for(int i = 0; i < 26; i++)
+	    {
+	        int counter += list[i];        
+	    }
+	    return counter;
 	}
 	
 }
