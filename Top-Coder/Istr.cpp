@@ -70,8 +70,8 @@ int Istr::count(std::string str, int xx)
 			}
 			if(AlphabetLower[z] != max)
 			{
-					int zz = n * n;
-					finallist.push_back (zz);		
+				int zz = n * n;
+				finallist.push_back (zz);		
 			}
 			
 	    }
