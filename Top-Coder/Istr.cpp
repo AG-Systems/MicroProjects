@@ -15,7 +15,7 @@ class Istr
 public:
 	int count(std::string,int);
 };
-int Istr::count(std::string str, int x)
+int Istr::count(std::string str, int xx)
 {
 	std::vector <int> list;
 	std::vector <int> finallist;
@@ -33,7 +33,7 @@ int Istr::count(std::string str, int x)
 		int zz = n * n;
 		list.push_back (zz);
 	}
-	if(x == 0)
+	if(xx == 0)
 	{
 	    int counter = 0;
 	    for(int i = 0; i < 26; i++)
@@ -43,17 +43,16 @@ int Istr::count(std::string str, int x)
 	    std::cout << "Value of the string is: " << counter << std::endl;
 	    return counter;
 	}
-	if(x != 0)
+	if(xx != 0)
 	{
 		for(int z = 0; z < 26; z++)
 		{
 		    size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
-		    std::cout << AlphabetLower[z] << ": " << n << std::endl;
-		    if(AlphabetLower[z] == max && xcount < x)
+		    if(AlphabetLower[z] == max && xcount < xx)
 		    {
 		        xcount++;    
 		    }
-		    if(AlphabetLower[z] == max && xcount > x)
+		    if(AlphabetLower[z] == max && xcount > xx)
 		    {
 	            int zz = n * n;
 		        finallist.push_back (zz);	        
@@ -77,5 +76,5 @@ int main()
 {
 	std::string str = "aba"; 
 	Istr a;
-	a.count(str, 0);
+	a.count(str, 2);
 }
