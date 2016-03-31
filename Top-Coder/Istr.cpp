@@ -29,7 +29,8 @@ int Istr::count(std::string str, int xx)
 		std::cout << AlphabetLower[z] << ": " << n << std::endl;
 		if(n > maxvalue)
 		{
-		    maxvalue = n; 
+		    maxvalue = n;
+			max = AlphabetLower[z];
 
 		}
 		int zz = n * n;
@@ -51,27 +52,28 @@ int Istr::count(std::string str, int xx)
 		{
 		    size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
 			std::cout << AlphabetLower[z] << ": " << n << std::endl;
-			if(n >= maxvalue && letter == true)
-		    {
-				int zz = n * n;
-		        finallist.push_back (zz);	       
-		    }
-			if(n >= maxvalue && xcount < xx)
-		    {
-				xcount++;
-				n-1;
-				int zz = n * n;
-		        finallist.push_back (zz);	
-		    }
-			if(xcount >= xx )
+			if(AlphabetLower[z] == max && letter == true)
 			{
-				letter == true;
+					int zz = n * n;
+					finallist.push_back (zz);	
 			}
-		    if(n < maxvalue)
-		    {
-                int zz = n * n;
-		        finallist.push_back (zz);
-		    }
+			if(AlphabetLower[z] == max && letter == false)
+			{
+						
+				int ve = n-xx;
+				if(ve >= 0)
+				{
+					int zz = ve * ve;
+					finallist.push_back (zz);
+					letter = true;
+				}
+			}
+			if(AlphabetLower[z] != max)
+			{
+					int zz = n * n;
+					finallist.push_back (zz);		
+			}
+			
 	    }
 	    int finalcounter = 0;
 	    for(int i = 0; i < 26; i++)
@@ -87,5 +89,4 @@ int main()
 	std::string str = "aba"; 
 	Istr a;
 	a.count(str, 1);
-	std::cin.get();
 }
