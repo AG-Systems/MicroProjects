@@ -87,6 +87,11 @@ int Istr::count(std::string str, int xx)
 int main()
 {
 	std::string str = "aba"; 
+	std::string str2 = "abacaba";
 	Istr a;
 	a.count(str, 1);
+	a.count(str2, 0);
+	a.count(str2, 1);
+	a.count(str2, 3);
+	std::cin.get();
 }
