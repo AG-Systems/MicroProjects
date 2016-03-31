@@ -30,7 +30,7 @@ int Istr::count(std::string str, int xx)
 		if(n > maxvalue)
 		{
 		    maxvalue = n;
-			max = AlphabetLower[z];
+		    max = AlphabetLower[z];
 
 		}
 		int zz = n * n;
