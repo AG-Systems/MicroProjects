@@ -50,7 +50,7 @@ int Istr::count(std::string str, int xx)
 	{
 		for(int z = 0; z < 26; z++)
 		{
-		    size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
+		    	size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
 			std::cout << AlphabetLower[z] << ": " << n << std::endl;
 			if(AlphabetLower[z] == max && letter == true)
 			{
