@@ -19,16 +19,18 @@ int Istr::count(std::string str, int xx)
 {
 	std::vector <int> list;
 	std::vector <int> finallist;
-	char max;
+	char max = ' ';
 	int maxvalue = 0;
 	int xcount = 0;
+	bool letter = false;
 	for(int z = 0; z < 26;z++)
 	{
 		size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
 		std::cout << AlphabetLower[z] << ": " << n << std::endl;
 		if(n > maxvalue)
 		{
-		    max == AlphabetLower[z];    
+		    maxvalue = n; 
+
 		}
 		int zz = n * n;
 		list.push_back (zz);
@@ -40,24 +42,25 @@ int Istr::count(std::string str, int xx)
 	    {
 	        counter += list[i];        
 	    }
-	    std::cout << "Value of the string is: " << counter << std::endl;
-	    return counter;
+	     std::cout << "Value of the string is: " << counter << std::endl;
+	     return counter;
 	}
 	if(xx != 0)
 	{
 		for(int z = 0; z < 26; z++)
 		{
 		    size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
-		    if(AlphabetLower[z] == max && xcount < xx)
+			std::cout << AlphabetLower[z] << ": " << n << std::endl;
+		    if(n == maxvalue || n > maxvalue && letter == false)
 		    {
-		        xcount++;    
+				letter == true;        
 		    }
-		    if(AlphabetLower[z] == max && xcount > xx)
+			if(n == maxvalue || n > maxvalue && letter == true)
 		    {
-	            int zz = n * n;
-		        finallist.push_back (zz);	        
-		    }
-		    if(AlphabetLower[z] != max)
+				int zz = n * n;
+		        finallist.push_back (zz);	       
+		    }		 
+		    if(n < maxvalue)
 		    {
                 int zz = n * n;
 		        finallist.push_back (zz);
@@ -76,5 +79,6 @@ int main()
 {
 	std::string str = "aba"; 
 	Istr a;
-	a.count(str, 2);
+	a.count(str, 1);
+	std::cin.get();
 }
