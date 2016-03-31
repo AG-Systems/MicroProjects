@@ -51,15 +51,22 @@ int Istr::count(std::string str, int xx)
 		{
 		    size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
 			std::cout << AlphabetLower[z] << ": " << n << std::endl;
-		    if(n == maxvalue || n > maxvalue && letter == false)
-		    {
-				letter == true;        
-		    }
-			if(n == maxvalue || n > maxvalue && letter == true)
+			if(n >= maxvalue && letter == true)
 		    {
 				int zz = n * n;
 		        finallist.push_back (zz);	       
-		    }		 
+		    }
+			if(n >= maxvalue && xcount < xx)
+		    {
+				xcount++;
+				n-1;
+				int zz = n * n;
+		        finallist.push_back (zz);	
+		    }
+			if(xcount >= xx )
+			{
+				letter == true;
+			}
 		    if(n < maxvalue)
 		    {
                 int zz = n * n;
