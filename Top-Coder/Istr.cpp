@@ -21,6 +21,7 @@ int Istr::count(std::string str, int x)
 	std::vector <int> finallist;
 	char max;
 	int maxvalue = 0;
+	int xcount = 0;
 	for(int z = 0; z < 26;z++)
 	{
 		size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
@@ -44,24 +45,32 @@ int Istr::count(std::string str, int x)
 	}
 	if(x != 0)
 	{
+		for(int z = 0; z < 26; z++)
+		{
+		    size_t n = std::count(str.begin(), str.end(), AlphabetLower[z]);
+		    std::cout << AlphabetLower[z] << ": " << n << std::endl;
+		    if(AlphabetLower[z] == max && xcount < x)
+		    {
+		        xcount++;    
+		    }
+		    if(AlphabetLower[z] == max && xcount > x)
+		    {
+	            int zz = n * n;
+		        finallist.push_back (zz);	        
+		    }
+		    if(AlphabetLower[z] != max)
+		    {
+                int zz = n * n;
+		        finallist.push_back (zz);
+		    }
+	    }
+	    int finalcounter = 0;
 	    for(int i = 0; i < 26; i++)
 	    {
-	        if(AlphabetLower[i] == max)
-	        {
-	            for(int z = 0; z < x; z++)
-	            {
-	                list.erase(i + z);    
-	            }
-	            
-	        }
+	        finalcounter += finallist[i];        
 	    }
-	    int counter = 0;
-	    for(int i = 0; i < 26; i++)
-	    {
-	        counter += list[i];        
-	    }
-	    std::cout << "Value of the string is: " << counter << std::endl;
-	    return counter;
+	    std::cout << "Value of the string is: " << finalcounter << std::endl;
+	    return finalcounter;
 	}
 }
 int main()
