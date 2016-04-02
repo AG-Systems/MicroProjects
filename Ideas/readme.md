@@ -98,6 +98,5 @@ Stack game ai
 
 Programing mobile problems
 
-Topcoder solutions site
-
 Machine learning heatmap windows predictation program.
+
