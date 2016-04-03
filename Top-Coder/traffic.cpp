@@ -16,6 +16,10 @@ int traffic::time(int lights[], int speed)
 	{
 		timecounter++;
 		distance += speed;
+		if(distance >= lights[0])
+		{
+			
+		}
 	}
 }
 int main()
