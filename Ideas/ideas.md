@@ -100,4 +100,4 @@ Programing mobile problems
 
 Machine learning heatmap windows predictation program.
 
-Nerdy tech store that links to amazon. Uses affialiate links.
+Nerdy tech store that links to amazon. Uses affiliate links.
