@@ -13,7 +13,6 @@ const char Alpha[26] =
 std::vector <int> tracker (26, 0);
 void counter(std::string array[])
 {
-    std::vector <char> counter;
     size_t size = sizeof(array)/sizeof(int);
     for(int c = 0; c < sizeof(array); c++)
     {
