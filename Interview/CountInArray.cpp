@@ -24,24 +24,15 @@ void counter(std::string array[])
 		    {
 		        for(int xx =0; xx < n; xx++)
 		        {
-		            counter.push_back (Alpha[z]);	
+		            tracker[z]++;
 		        }
 		    }
-
 	    }
     }
-    for(int z = 0; z < size; z++)
-    {
-
-        if(Alpha[z] == counter[z])
-        {
-            tracker[z]++;        
-        }
-    }
-    for(int z = 0; z < size; z++)
-    {
-        std::cout << Alpha[z] << ": "<< tracker[z] << std::endl;
-    }   
+	for(int x = 0; x < 26; x++)
+	{
+		std::cout << Alpha[x] << ": " << tracker[x] << std::endl;
+	}
 }
 
 int main()
