@@ -14,7 +14,7 @@ std::vector <int> tracker (26, 0);
 void counter(std::string array[])
 {
     std::vector <char> counter;
-	size_t size = sizeof(array)/sizeof(int);
+    size_t size = sizeof(array)/sizeof(int);
     for(int c = 0; c < sizeof(array); c++)
     {
         for(int z = 0; z < 26;z++)
@@ -29,10 +29,10 @@ void counter(std::string array[])
 		    }
 	    }
     }
-	for(int x = 0; x < 26; x++)
-	{
-		std::cout << Alpha[x] << ": " << tracker[x] << std::endl;
-	}
+    for(int x = 0; x < 26; x++)
+    {
+	std::cout << Alpha[x] << ": " << tracker[x] << std::endl;
+    }
 }
 
 int main()
