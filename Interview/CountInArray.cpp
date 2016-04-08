@@ -14,28 +14,27 @@ std::vector <int> tracker (26, 0);
 void counter(std::string array[])
 {
     size_t size = sizeof(array)/sizeof(int);
-    for(int c = 0; c < sizeof(array); c++)
+    for(int c = 0; c < sizeof(array)+ 1; c++)
     {
         for(int z = 0; z < 26;z++)
 	    {
 		    size_t n = std::count(array[c].begin(), array[c].end(), Alpha[z]);
 		    if (n > 0)
 		    {
-		        for(int xx =0; xx < n; xx++)
-		        {
-		            tracker[z]++;
-		        }
+				tracker[z] += n;
 		    }
 	    }
     }
     for(int x = 0; x < 26; x++)
     {
-	std::cout << Alpha[x] << ": " << tracker[x] << std::endl;
+		std::cout << Alpha[x] << ": " << tracker[x] << std::endl;
     }
 }
 
 int main()
 {
-    std::string array[] = {"a","b","c","a","b"};
+    std::string array[] = {"hello","my","name","is","auriga", "ffffff"};
+	std::cout << sizeof(array) << std::endl;
     counter(array);
+	std::cin.get();
 }
