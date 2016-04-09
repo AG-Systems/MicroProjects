@@ -21,7 +21,7 @@ void counter(std::string array[])
 		    size_t n = std::count(array[c].begin(), array[c].end(), Alpha[z]);
 		    if (n > 0)
 		    {
-				tracker[z] += n;
+			tracker[z] += n;
 		    }
 	    }
     }
