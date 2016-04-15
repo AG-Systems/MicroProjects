@@ -1,31 +1,40 @@
 #include <iostream>
-#include <cstdlib>
+#include <algorithm>
+
+void bubblesort(int a[])
+{
+    bool win = true;
+
+    while(win)
+    {
+        int checker = 0;
+        for(int z = 0; z < sizeof(a)/sizeof(a[0]); z++)
+        {
+            if(a[z] > a[z+1])
+            {
+                std::swap(a[z],a[z+1]);
+                std::cout << a[z] << " ";
+            }
+            if(a[z] < a[z+1])
+            {
+                checker++;        
+            }
+            if(checker == sizeof(a))
+            {
+                win = false;
+                break;
+            }
+        }
+    }
+    std::cout << "\n" << std::endl;
+    for(int x = 0; x< sizeof(a)/sizeof(a[0]); x++)
+    {
+        std::cout << a[x] << " ";    
+    }
+}
 
 int main()
 {
-  int hold = -1;
-  int end = 10;
-  int length = 10;
-  
-  int List[] = { 44, 7, 23 };
-  // A basic list
-for(int counter = length - 1; counter > 0; counter--)
-{
-  for (int index = 0; index < end; index++)
-  {
-    if (List[index] > List[index+1])
-    {
-      hold = List[index+1];
-      List[index + 1] = List{index];
-      List[index] = hold;
-    }
-  }
-  end--;
-}
-
-  for (int index = 0; index < 10; index++)
-  {
-    std::cout << List[index] << ", ";
-  }
-  std::cout << endl;
+    int array[] = {1,5,6,8,23,5,8,1};
+    bubblesort(array);    
 }
