@@ -10,7 +10,7 @@ void bubblesort(std::vector <int> a)
         int checker = 0;
         for(int z = 0; z < a.size(); z++)
         {
-            if(a[z] > a[z+1])
+            if(a[z] > a[z+1] && z < a.size())
             {
                 std::swap(a[z],a[z+1]);
                 std::cout << a[z] << " ";
