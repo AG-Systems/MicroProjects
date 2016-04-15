@@ -1,14 +1,14 @@
 #include <iostream>
 #include <algorithm>
+#include <vector>
 
-void bubblesort(int a[])
+void bubblesort(std::vector <int> a)
 {
     bool win = true;
-
     while(win)
     {
         int checker = 0;
-        for(int z = 0; z < sizeof(a)/sizeof(a[0]); z++)
+        for(int z = 0; z < a.size(); z++)
         {
             if(a[z] > a[z+1])
             {
@@ -19,7 +19,7 @@ void bubblesort(int a[])
             {
                 checker++;        
             }
-            if(checker == sizeof(a))
+            if(checker == a.size())
             {
                 win = false;
                 break;
@@ -27,7 +27,7 @@ void bubblesort(int a[])
         }
     }
     std::cout << "\n" << std::endl;
-    for(int x = 0; x< sizeof(a)/sizeof(a[0]); x++)
+    for(int x = 0; x< a.size(); x++)
     {
         std::cout << a[x] << " ";    
     }
@@ -35,6 +35,6 @@ void bubblesort(int a[])
 
 int main()
 {
-    int array[] = {1,5,6,8,23,5,8,1};
+    std::vector <int> array = {2,1,5,4,3,6,7,8};
     bubblesort(array);    
 }
