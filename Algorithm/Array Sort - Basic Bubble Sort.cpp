@@ -4,11 +4,11 @@
 
 void bubblesort(int a[], int size)
 {
-	bool win = true;
+   bool win = true;
     while(win)
     {
         int checker = 0;
-		std::cout << "\n";
+	std::cout << "\n";
         for(int z = 0; z < size; z++)
         {
             std::cout << a[z] << " ";
