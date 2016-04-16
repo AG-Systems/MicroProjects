@@ -4,6 +4,7 @@
 
 void linearsearch(int key, int a[],int arraysize)
 {
+	// int size = std::extent<decltype(a)>::value;
 	for(int z = 0; z < arraysize; z++)
 	{
 		if(key == a[z])
