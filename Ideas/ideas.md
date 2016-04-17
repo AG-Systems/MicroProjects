@@ -105,3 +105,5 @@ Nerdy tech store that links to amazon. Uses affiliate links.
 Google jobs
 
 Google chrome Extension
+
+Sell keychains, and nerdy stuff.
