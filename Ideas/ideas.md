@@ -107,3 +107,5 @@ Google jobs
 Google chrome Extension
 
 Sell keychains, and nerdy stuff.
+
+Learn sql
