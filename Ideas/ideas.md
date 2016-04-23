@@ -111,3 +111,5 @@ Sell keychains, and nerdy stuff.
 Learn sql
 
 Learn ruby on rails
+
+blog
