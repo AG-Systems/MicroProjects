@@ -118,4 +118,6 @@ twitter-clone
 
 workout site
 
-site that respects the artists
+Site that respects the artists
+
+Write a motivional book
