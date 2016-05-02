@@ -1,22 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-
-std::vector <int> mergesort(std::vector <int> list)
-{
-    int n = list.size();
-    if(n == 1)
-    {
-        return list;    
-    }
-    std::vector<int> v2(list.begin(), list.begin() + list.size()/2),
-               v3(list.begin() + list.size()/2, list.end()); 
-    v2 = mergesort(v2);
-    v3 = mergesort(v3);
-    return merge(v2, v3);
-    
-}
-
+#include <cstdlib>
 std::vector <int> merge(std::vector <int> list1, std::vector <int> list2)
 {
     std::vector <int> list3; 
@@ -45,7 +30,25 @@ std::vector <int> merge(std::vector <int> list1, std::vector <int> list2)
     }
     return list3;
 }
+
+std::vector <int> mergesort(std::vector <int> list)
+{
+    int n = list.size();
+    if(n == 1)
+    {
+        return list;    
+    }
+    std::vector<int> v2(list.begin(), list.begin() + list.size()/2),
+               v3(list.begin() + list.size()/2, list.end()); 
+    v2 = mergesort(v2);
+    v3 = mergesort(v3);
+    return merge(v2, v3);
+    
+}
+
+
 int main()
 {
-        
+    std::vector <int> ar;
+    
 }
