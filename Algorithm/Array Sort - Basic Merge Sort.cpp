@@ -20,23 +20,23 @@ std::vector <int> merge(std::vector <int> list1, std::vector <int> list2)
         if(list1[0] > list2[0])
         {
             list3.push_back (list2[0]);
-            list2.erase (list2[0]);
+            list2.erase (list2.begin());
         }
         else
         {
             list3.push_back (list1[0]);
-            list1.erase (list1[0]);
+            list1.erase (list1.begin());
         }
     }
     while(list1.size() > 0)
     {
         list3.push_back (list1[0]);
-        list1.erase (list1[0]);
+        list1.erase (list1.begin());
     }
     while(list2.size() > 0)
     {
         list3.push_back (list2[0]);   
-        list2.erase (list2[0]);     
+        list2.erase (list2.begin());     
     }
     return list3;
 }
