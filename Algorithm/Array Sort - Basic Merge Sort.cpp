@@ -1,35 +1,46 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
-#include <algorithm> 
-#include <iterator>
 
-void merge(std::vector <int> v1,std::vector <int> v2, std::vector <int> v3)
+std::vector <int> mergesort(std::vector <int> list)
 {
-	std::vector <int> finallist;
-	std::vector<int> v2(v1.begin(), v1.begin() + v1.size()/2),
-					 v3(v1.begin() + v1.size()/2, v1.end());
-	if(v2.size() == 0 || v3.size() == 0)
-	{
-		if(v2[0] < v3[0])
-		{
-			finallist.push_back (v2[0]);
-			finallist.push_back (v3[0]);
-		}
-		else
-		{
-			finallist.push_back (v3[0]);
-			finallist.push_back (v2[0]);	
-		}
-		return;
-	}
-	else
-	{
-		merge(v2, v3, v3);
-	}
+    int n = list.size();
+    if(n == 1)
+    {
+        return list;    
+    }
+    
 }
 
+std::vector <int> merge(std::vector <int> list1, std::vector <int> list2)
+{
+    std::vector <int> list3; 
+    while(list1.size() > 0 && list2.size() > 0)
+    {
+        if(list1[0] > list2[0])
+        {
+            list3.push_back (list2[0]);
+            list2.erase (list2[0]);
+        }
+        else
+        {
+            list3.push_back (list1[0]);
+            list1.erase (list1[0]);
+        }
+    }
+    while(list1.size() > 0)
+    {
+        list3.push_back (list1[0]);
+        list1.erase (list1[0]);
+    }
+    while(list2.size() > 0)
+    {
+        list3.push_back (list2[0]);   
+        list2.erase (list2[0]);     
+    }
+    return list3;
+}
 int main()
 {
-
-
+        
 }
