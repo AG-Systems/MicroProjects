@@ -9,6 +9,11 @@ std::vector <int> mergesort(std::vector <int> list)
     {
         return list;    
     }
+    std::vector<int> v2(list.begin(), list.begin() + list.size()/2),
+               v3(list.begin() + list.size()/2, list.end()); 
+    v2 = mergesort(v2);
+    v3 = mergesort(v3);
+    return merge(v2, v3);
     
 }
 
