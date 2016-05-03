@@ -26,7 +26,7 @@ std::vector <int> binarysearch(std::vector <int> list,int target)
         {
             for(int z = 0; z < target; z++)
             {
-                list.erase(list.begin() + z);    
+               list.erase(list.begin());
             }
         }
         else if (list[half] < target)
