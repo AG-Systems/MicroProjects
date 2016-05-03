@@ -4,12 +4,11 @@
 std::vector <int> binarysearch(std::vector <int> list,int target)
 {
     int half = list.size() / 2;
-	int newtarget = target+1;
     if (list.size() <= 2)
     {
         for(int c = 0; c < 2; c++)
         {
-            if(list[c] == newtarget)
+            if(list[c] == target)
             {
                 std::cout << "Found" << std::endl;
                 return list;    
@@ -18,22 +17,22 @@ std::vector <int> binarysearch(std::vector <int> list,int target)
     }
     if(list.size() % 2 == 0 && list.size() > 2)
     {
-        if(newtarget == list[half])
+        if(target == list[half+1])
         {
-            std::cout << "Found number in this position: " << half << std::endl;
+            std::cout << "Found number in this position: " << half+1 << std::endl;
             return list;
         }
-        else if(list[half] > newtarget)
+        else if(list[half+1] > target)
         {
-            for(int z = 0; z < target; z++)
+            for(int z = 0; z < target-1; z++)
             {
                list.erase(list.begin());
             }
         }
-        else if (list[half] < newtarget)
+        else if (list[half+1] < target)
         {
             int half = list.size() / 2;
-            for(int z = list.size(); z > target; z--)
+            for(int z = list.size(); z > target+1; z--)
             {
                  list.pop_back();                    
             }
@@ -41,19 +40,19 @@ std::vector <int> binarysearch(std::vector <int> list,int target)
     }
 	else if(list.size() > 2)
 	{
-	    if(target == list[half])
+	    if(target == list[half+1])
         {
-            std::cout << "Found number in this position: " << half << std::endl;
+            std::cout << "Found number in this position: " << half+1 << std::endl;
             return list;
         }
-        else if(list[half+1] > newtarget || list[half-1] > newtarget)
+        else if(list[half+2] > target || list[half] > target)
         {
             for(int z = 0; z < target; z++)
             {
                list.erase(list.begin());
             }
         }
-        else if (list[half+1] < newtarget || list[half-1] < newtarget)
+        else if (list[half+2] < target || list[half] < target)
         {
             int half = list.size() / 2;
             for(int z = list.size(); z > target; z--)
@@ -70,5 +69,5 @@ int main()
     std::vector<int> myvector;
     for (int i=1; i<=10; i++) myvector.push_back(i);  
     
-    binarysearch(myvector,5);
+    binarysearch(myvector,6);
 }
