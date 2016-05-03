@@ -1,5 +1,8 @@
 #include <iostream>
 #include <vector>
+#include <cstdlib>
+#include <algorithm>
+#include <ctime>
 
 std::vector <int> selectionsort(std::vector <int> a, std::vector <int> b)
 {
@@ -8,7 +11,7 @@ std::vector <int> selectionsort(std::vector <int> a, std::vector <int> b)
     {
         if(a[z] < low)
         {
-            int low = a[z];    
+            low = a[z];    
         }
     }
     std::cout << low << " ";
@@ -32,7 +35,14 @@ int main()
 {
     std::vector<int> myvector;
     std::vector<int> sortedvector;
-    for (int i=1; i<=10; i++) myvector.push_back(i); 
-    
+	int a[8] = {0, 1, 2, 3, 4, 5, 6, 7};
+    std::srand(unsigned(time(0)));
+    std::random_shuffle(a, a + 8);
+	for (int i=0; i<8; i++)
+    {
+        std::cout << a[i] << " ";
+        myvector.push_back (a[i]);
+    }
+	std::cout << "\n";
     selectionsort(myvector,sortedvector);
 }
