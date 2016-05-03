@@ -38,6 +38,29 @@ std::vector <int> binarysearch(std::vector <int> list,int target)
             }
         }
     }
+	else if(list.size() > 2)
+	{
+	    if(target == list[half])
+        {
+            std::cout << "Found number in this position: " << half << std::endl;
+            return list;
+        }
+        else if(list[half+1] > target || list[half-1] > target)
+        {
+            for(int z = 0; z < target; z++)
+            {
+               list.erase(list.begin());
+            }
+        }
+        else if (list[half+1] < target || list[half-1] < target)
+        {
+            int half = list.size() / 2;
+            for(int z = list.size(); z > target; z--)
+            {
+                 list.pop_back();                    
+            }
+        }		
+	}
     binarysearch(list,target);
 }
 
