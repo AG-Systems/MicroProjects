@@ -3,7 +3,7 @@
 
 std::vector <int> selectionsort(std::vector <int> a, std::vector <int> b)
 {
-    int low;
+    int low = a[0];
     for(int z = 0; z < a.size(); z++)
     {
         if(a[z] < low)
@@ -13,7 +13,18 @@ std::vector <int> selectionsort(std::vector <int> a, std::vector <int> b)
     }
     std::cout << low << " ";
     b.push_back (low);
-    a.erase(a.begin() + (low-1));
+	for(int x = 0; x < a.size(); x++)
+	{
+		if(a[x] == low)
+		{
+			a.erase(a.begin() + (x));				
+		}
+
+	}
+	if(a.size() < 1)
+	{
+		return a;
+	}
     selectionsort(a,b);
 }
 
