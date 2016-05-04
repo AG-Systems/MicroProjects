@@ -1,46 +1,49 @@
 #include <iostream>
 #include <vector>
-#include <ctime>
-#include <cstdlib>
-#include <algorithm>
-#include <iterator>
 
-std::vector <int> quicksort(std::vector <int> list,int counter)
+void quickstart(std::vector <int> list,std::vector <int> sortedvector,int counter)
 {
-	int pivot = list[list.size()-1];
+	int pivot = list[list.size()];
+	std::vector <int> lesser;
+	std::vector <int> greater;
+	std::vector <int> mid;
 	bool checker = false;
 	for(int z = counter; z < list.size(); z++)
 	{
 		if(list[z] < pivot)
 		{
-			std::swap (list[counter], list[z]);
-			std::cout << pivot << " ";
+			lesser.push_back(list[z]);
 			checker = true;
-			break;
+		}
+		if(list[z] > pivot)
+		{
+			greater.push_back(list[z]);
 		}
 	}
-	std::swap (list[counter+1], pivot);
-	pivot = list[counter+1];
-	if(counter == list.size())
+	if(checker == false)
 	{
-		return list;
+		lesser.push_back(pivot);
 	}
-	counter++;
-	quicksort(list,counter);
+	if(checker == true)
+	{
+		mid.push_back(pivot);
+	}
+	sort(lesser,greater,counter);
 }
+void sort(std::vector <int> list1, std::vector <int> list2, int counter)
+{
+	int lowest = list1[0];
+	for(int z = 0; z < list1.size(); z++)
+    {
+        if(list1[z] < lowest)
+        {
+            lowest = list1[z];    
+        }
+    }
+	list1.push_back(lowest);
 
+}
 int main()
 {
-	std::vector <int> myvector;
-	int a[8] = {0, 1, 2, 3, 4, 5, 6, 7};
-	std::srand(unsigned(time(0)));
 
-    std::random_shuffle(a, a + 8);
-    for (int i=0; i<8; i++)
-    {
-        std::cout << a[i] << " ";
-        myvector.push_back (a[i]);
-    }
-    std::cout << "\n";
-	quicksort(myvector,0);
 }
