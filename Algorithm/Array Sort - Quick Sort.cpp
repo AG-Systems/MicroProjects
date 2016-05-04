@@ -1,49 +1,72 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
-void quickstart(std::vector <int> list,std::vector <int> sortedvector,int counter)
+void quicksort(std::vector <int> list,std::vector <int> emptylist)
 {
-	int pivot = list[list.size()];
-	std::vector <int> lesser;
-	std::vector <int> greater;
-	std::vector <int> mid;
-	bool checker = false;
-	for(int z = counter; z < list.size(); z++)
-	{
-		if(list[z] < pivot)
-		{
-			lesser.push_back(list[z]);
-			checker = true;
-		}
-		if(list[z] > pivot)
-		{
-			greater.push_back(list[z]);
-		}
-	}
-	if(checker == false)
-	{
-		lesser.push_back(pivot);
-	}
-	if(checker == true)
-	{
-		mid.push_back(pivot);
-	}
-	sort(lesser,greater,counter);
-}
-void sort(std::vector <int> list1, std::vector <int> list2, int counter)
-{
-	int lowest = list1[0];
-	for(int z = 0; z < list1.size(); z++)
+    int pivot = list[list.size()];
+    list.pop_back();
+    std::vector <int> low;
+    std::vector <int> high;
+    int checker = 0;
+    for(int z = 0; z < list.size(); z++)
     {
-        if(list1[z] < lowest)
+        if(list[z] <= pivot)
         {
-            lowest = list1[z];    
+            low.push_back(list[z]);    
+        }
+        else
+        {
+            high.push_back(list[z]);    
         }
     }
-	list1.push_back(lowest);
-
+    for(int z = 0; z < low.size(); z++)
+    {
+        std::cout << low[z] << " ";
+		if(low[z] < low[z+1] && low[z] != low[low.size()])
+        {
+            checker++;        
+        }
+		if(low[z] > low[z+1] && low[z] != low[low.size()])
+        {
+            std::swap(low[z],low[z+1]);
+            std::cout << low[z] << " ";
+        }
+        if(checker == low.size())
+        {
+            break;
+        }
+    }
+    for(int z = 0; z < high.size(); z++)
+    {
+        std::cout << high[z] << " ";
+		if(high[z] < high[z+1] && high[z] != high[high.size()])
+        {
+            checker++;        
+        }
+		if(high[z] > high[z+1] && high[z] != high[high.size()])
+        {
+            std::swap(high[z],high[z+1]);
+            std::cout << high[z] << " ";
+        }
+        if(checker == low.size())
+        {
+            break;
+        }
+    }
+    for(int z = 0; z < low.size(); z++)
+    {
+        emptylist.push_back(low[z]);    
+    }
+    emptylist.push_back(pivot);
+    for(int z = 0; z < high.size(); z++)
+    {
+        emptylist.push_back(high[z]);    
+    }
+    
 }
+
 int main()
 {
-
+    
 }
