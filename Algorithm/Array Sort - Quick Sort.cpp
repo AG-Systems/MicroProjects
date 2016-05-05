@@ -1,15 +1,50 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <ctime>
+#include <cstdlib>
+
+void minisort(std::vector <int> minilist, std::vector <int> emptylist)
+{
+	bool checker = true;
+	while(checker)
+	{
+		int tracker = 0;
+		for(int z = 0; z <= minilist.size(); z++)
+		{
+			if(minilist[z] != minilist[minilist.size()-1])
+			{
+				if(minilist[z] > minilist[z+1])
+				{
+					std::iter_swap(minilist.begin()+z,minilist.begin()+z+1);								
+				}
+				else
+				{
+					tracker++;	
+				}
+			}
+		}
+		if(checker == minilist.size())
+		{
+			checker = false;
+			break;
+		}
+	}
+	for(int x = 0; x < minilist.size(); x++)
+	{
+		std::cout << minilist[x] << " ";
+		emptylist.push_back(minilist[x]);
+	}
+}
 
 void quicksort(std::vector <int> list,std::vector <int> emptylist)
 {
-    int pivot = list[list.size()];
+    int pivot = list[list.size()-1];
     list.pop_back();
     std::vector <int> low;
     std::vector <int> high;
     int checker = 0;
-    for(int z = 0; z < list.size(); z++)
+	for(int z = 0; z < list.size(); z++)
     {
         if(list[z] <= pivot)
         {
@@ -20,50 +55,10 @@ void quicksort(std::vector <int> list,std::vector <int> emptylist)
             high.push_back(list[z]);    
         }
     }
-    for(int z = 0; z < low.size(); z++)
-    {
-        std::cout << low[z] << " ";
-		if(low[z] < low[z+1] && low[z] != low[low.size()])
-        {
-            checker++;        
-        }
-		if(low[z] > low[z+1] && low[z] != low[low.size()])
-        {
-            std::swap(low[z],low[z+1]);
-            std::cout << low[z] << " ";
-        }
-        if(checker == low.size())
-        {
-            break;
-        }
-    }
-    for(int z = 0; z < high.size(); z++)
-    {
-        std::cout << high[z] << " ";
-		if(high[z] < high[z+1] && high[z] != high[high.size()])
-        {
-            checker++;        
-        }
-		if(high[z] > high[z+1] && high[z] != high[high.size()])
-        {
-            std::swap(high[z],high[z+1]);
-            std::cout << high[z] << " ";
-        }
-        if(checker == low.size())
-        {
-            break;
-        }
-    }
-    for(int z = 0; z < low.size(); z++)
-    {
-        emptylist.push_back(low[z]);    
-    }
-    emptylist.push_back(pivot);
-    for(int z = 0; z < high.size(); z++)
-    {
-        emptylist.push_back(high[z]);    
-    }
-    
+	minisort(low,emptylist);
+	emptylist.push_back(pivot);
+	minisort(high,emptylist);
+
 }
 
 int main()
