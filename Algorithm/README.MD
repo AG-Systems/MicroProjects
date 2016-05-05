@@ -12,11 +12,11 @@ Reasons why I made this folder
 
 ## Folder structure
 
-Expect a lot of cpp and py files. I only code in c++ and python for now.
+List of my algorithms written in c++
 
 ## Contributing guidelines
 
-If you want to help me out you can always message me.
+If you want to help me out you can always fix it and make a push. 
 
 
 Please understand I'm not the best programmer so expect to see some sloppy code or not working code.
