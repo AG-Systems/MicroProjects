@@ -10,7 +10,7 @@ void minisort(std::vector <int> minilist, std::vector <int> emptylist)
 	while(checker)
 	{
 		int tracker = 0;
-		for(int z = 0; z <= minilist.size(); z++)
+		for(int z = 0; z <= minilist.size()-1; z++)
 		{
 			if(minilist[z] != minilist[minilist.size()-1])
 			{
@@ -23,8 +23,12 @@ void minisort(std::vector <int> minilist, std::vector <int> emptylist)
 					tracker++;	
 				}
 			}
+			else if(minilist.size() < 2)
+			{
+				return;
+			}
 		}
-		if(checker == minilist.size())
+		if(tracker >= minilist.size()-2)
 		{
 			checker = false;
 			break;
@@ -75,4 +79,5 @@ int main()
     }   
     std::cout << "\n" << std::endl;
     quicksort(myvector,sortedvector);
+	std::cin.get();
 }
