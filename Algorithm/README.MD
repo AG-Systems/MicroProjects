@@ -7,12 +7,10 @@ Reasons why I made this folder
 
 - To practice at my algorithm thinking and writing.
 - To show other people of what I can make
-
-[My profile]: https://github.com/AG-Systems
-
+- 
 ## Folder structure
 
-List of my algorithms written in c++
+List of my algorithms written in C++
 
 ## Contributing guidelines
 
