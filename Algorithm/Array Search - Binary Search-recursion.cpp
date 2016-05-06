@@ -1,73 +1,34 @@
 #include <iostream>
 #include <vector>
 
-std::vector <int> binarysearch(std::vector <int> list,int target)
+int binarysearch(std::vector <int> list, int target, int low, int high)
 {
-    int half = list.size() / 2;
-    if (list.size() <= 2)
+    if(high < low)
     {
-        for(int c = 0; c < 2; c++)
-        {
-            if(list[c] == target)
-            {
-                std::cout << "Found" << std::endl;
-                return list;    
-            }
-        }
+        return 1;    
     }
-    if(list.size() % 2 == 0 && list.size() > 2)
+    int mid = (low + high) / 2;
+    if(list[mid] > target)
     {
-        if(target == list[half+1])
-        {
-            std::cout << "Found number in this position: " << half+1 << std::endl;
-            return list;
-        }
-        else if(list[half+1] > target)
-        {
-            for(int z = 0; z < target-1; z++)
-            {
-               list.erase(list.begin());
-            }
-        }
-        else if (list[half+1] < target)
-        {
-            int half = list.size() / 2;
-            for(int z = list.size(); z > target+1; z--)
-            {
-                 list.pop_back();                    
-            }
-        }
+        return binarysearch(list,target,low,mid-1);    
     }
-	else if(list.size() > 2)
-	{
-	    if(target == list[half+1])
-        {
-            std::cout << "Found number in this position: " << half+1 << std::endl;
-            return list;
-        }
-        else if(list[half+2] > target || list[half] > target)
-        {
-            for(int z = 0; z < target; z++)
-            {
-               list.erase(list.begin());
-            }
-        }
-        else if (list[half+2] < target || list[half] < target)
-        {
-            int half = list.size() / 2;
-            for(int z = list.size(); z > target; z--)
-            {
-                 list.pop_back();                    
-            }
-        }		
-	}
-    binarysearch(list,target);
+    else if(list[mid] < target)
+    {
+        return binarysearch(list,target,mid+1, high);    
+    }
+    else
+    {
+        return mid;    
+    }
 }
-
 int main()
 {
-    std::vector<int> myvector;
-    for (int i=1; i<=10; i++) myvector.push_back(i);  
-    
-    binarysearch(myvector,6);
+    std::vector <int> mylist;
+    for(int x = 0; x < 10; x++)
+    {
+        mylist.push_back(x);    
+    }
+    binarysearch(mylist,5,1,10);
 }
+
+
