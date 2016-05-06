@@ -7,7 +7,7 @@ Reasons why I made this folder
 
 - To practice at my algorithm thinking and writing.
 - To show other people of what I can make
-- 
+
 ## Folder structure
 
 List of my algorithms written in C++
