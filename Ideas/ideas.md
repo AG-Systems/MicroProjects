@@ -125,3 +125,5 @@ Write a motivional book
 Become a motiovational speaker
 
 Make a car youtube review show
+
+Practice unit testing
