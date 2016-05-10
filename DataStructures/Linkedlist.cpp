@@ -1,9 +1,8 @@
 #include <iostream>
 
-template <typename T> 
 struct node 
 { 
-  T data; 
+  int data; 
   struct node* next; 
 }; 
 
@@ -18,8 +17,14 @@ struct node *searchNode(int n)
 	node *prev = head;
 	while(cur) 
 	{
-		if(cur->data == n) return cur;
-		if(cur->data > n) return prev;
+		if(cur->data == n) 
+		{
+		    return cur;
+		}
+		if(cur->data > n) 
+		{
+		    return prev;
+		}
 		prev = cur;
 		cur = cur->next;
 	}
