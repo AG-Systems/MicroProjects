@@ -1,15 +1,30 @@
-struct node {
-  int x;
-  node *next;
-};
+#include <iostream>
 
+template <typename T> 
+struct node 
+{ 
+  T data; 
+  struct node* next; 
+}; 
+
+node *head = NULL;
+struct node *searchNode(int n) 
+{
+	if(head == NULL) 
+	{
+	    return head;
+	}
+	node *cur = head;
+	node *prev = head;
+	while(cur) 
+	{
+		if(cur->data == n) return cur;
+		if(cur->data > n) return prev;
+		prev = cur;
+		cur = cur->next;
+	}
+}
 int main()
 {
-  node *root;      // This will be the unchanging first node
-
-  root = new node; // Now root points to a node struct
-  root->next = 0;  // The node root points to has its next pointer
-                   //  set equal to a null pointer
-  root->x = 5;     // By using the -> operator, you can modify the node
-                   //  a pointer (root in this case) points to.
+        
 }
