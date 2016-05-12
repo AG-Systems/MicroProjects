@@ -1,17 +1,19 @@
 #include <iostream>
+#include <vector>
 
-// need to make a min heap
-
-void heapsort()
+void heapify(std::vector <int> list, int nodesize, int node)
 {
-  // make the lowest number go to the top of the tree. Make it the parent
-  
-  // Delete the main node afterwards as you insert it into the first array slot
-  
-  // rinse and repeat
-}
-
-int main()
-{
-  
+    int largest = node;
+    int left = 2*node + 1;
+    int right = 2*node + 2;
+    
+    if(left < nodesize && list[left] > list[largest])
+    {
+        largest = left;    
+    }
+    
+    if(right < nodeisze && list[right] > list[largest])
+    {
+        largest = right;    
+    }
 }
