@@ -50,4 +50,9 @@ int main()
     convertvector(a,6,newlist);
     
     heap_sort(newlist,newlist.size());
+    
+    for(int c = 0; c < newlist.size(); c++)
+    {
+        std::cout << newlist[c] << " ";    
+    }
 }
