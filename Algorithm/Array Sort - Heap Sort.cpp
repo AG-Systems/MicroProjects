@@ -12,8 +12,14 @@ void heapify(std::vector <int> list, int nodesize, int node)
         largest = left;    
     }
     
-    if(right < nodeisze && list[right] > list[largest])
+    if(right < nodesize && list[right] > list[largest])
     {
         largest = right;    
+    }
+    
+    if (largest != node)
+    {
+        std::swap(list[node], list[largest]);
+        heapify(list,nodesize,largest);
     }
 }
