@@ -11,3 +11,5 @@ Ekko ap jungle s6
 Ekko tank jungle s6
 
 Riven jungle s6
+
+Jinx jungle s6
