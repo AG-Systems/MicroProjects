@@ -32,6 +32,16 @@ int Arrows::longestArrow(std::string str)
 			max = counter;
 		}
 	}
+	for(int x = str.size(); x > 0; x--)
+	{
+		if(str[x] == '>' && str[x] != str[0])
+		{
+			if(str[x-1] == '<' || str[x-1] == '>')
+			{
+				counter = 0;
+			}
+		}		
+	}
 }
 
 int main()
