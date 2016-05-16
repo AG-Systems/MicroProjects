@@ -14,10 +14,13 @@ int Arrows::longestArrow(std::string str)
 	{
 		if(str[z] == '<' && str[z] != str[str.size()])
 		{
-			if(str[z+1] == '-' || str[z+1] == '=')
+			if(str[z+1] == '<' || str[z+1] == '>')
 			{
-				if(str[z+1] )
-				counter++;
+				counter = 0;
+			}
+			else if(str[z+1] == '-' && str[z+2] == '-')
+			{
+				counter += 2;				
 			}
 		}
 		if(max < counter)
