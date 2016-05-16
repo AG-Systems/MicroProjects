@@ -9,15 +9,20 @@ public:
 int Arrows::longestArrow(std::string str)
 {
 	int max = 0;
+	int counter = 0;
 	for(int z = 0; z < str.size(); z++)
 	{
-		int counter = 0;
-		if(str[z] == '<')
+		if(str[z] == '<' && str[z] != str[str.size()])
 		{
 			if(str[z+1] == '-' || str[z+1] == '=')
 			{
+				if(str[z+1] )
 				counter++;
 			}
+		}
+		if(max < counter)
+		{
+			max = counter;
 		}
 	}
 }
