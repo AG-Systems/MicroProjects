@@ -18,7 +18,7 @@ int Arrows::longestArrow(std::string str)
 			{
 				counter = 0;
 			}
-			else if(str[z+1] == '-' && str[z+2] == '-')
+			else if(str[z+1] ==  str[z+2])
 			{
 				counter += 2;				
 			}
