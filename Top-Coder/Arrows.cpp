@@ -22,6 +22,10 @@ int Arrows::longestArrow(std::string str)
 			{
 				counter += 2;				
 			}
+			else if(str[z+1] !=  str[z+2])
+			{
+				counter += 1;				
+			} 
 		}
 		if(max < counter)
 		{
