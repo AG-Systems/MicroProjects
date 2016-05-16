@@ -10,6 +10,7 @@ int Arrows::longestArrow(std::string str)
 {
 	int max = 0;
 	int counter = 0;
+	bool checker = false;
 	for(int z = 0; z < str.size(); z++)
 	{
 		if(str[z] == '<' && str[z] != str[str.size()])
@@ -40,11 +41,23 @@ int Arrows::longestArrow(std::string str)
 			{
 				counter = 0;
 			}
+			else if(str[x-1] ==  str[x-2])
+			{
+				counter += 2;				
+			}
+			else if(str[x-1] !=  str[x-2])
+			{
+				counter += 1;				
+			} 
 		}		
 	}
+	std::cout << max << std::endl;
+	return max;
 }
 
 int main()
 {
-
+	std::string str = "<----=====>";
+	Arrows a;
+	a.longestArrow(str);
 }
