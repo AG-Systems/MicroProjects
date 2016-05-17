@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <vector>
 class Arrows
 {
 public:
@@ -45,7 +45,7 @@ int Arrows::loopsearchrev(char c, char b, std::string str, int counter, int max)
             {
                 counter++;    
             }
-            if(str[z] == b && str[z+1] != str[z])
+            if(str[x] == b && str[x+1] != str[x])
             {
                 counter = 1;    
             }
@@ -55,17 +55,31 @@ int Arrows::loopsearchrev(char c, char b, std::string str, int counter, int max)
             max = counter;    
         }
     }
+	return max;
 }
 int Arrows::longestArrow(std::string str)
 {
     int max = 0;
     int counter = 0;
+	int maxnum = str[0];
+	std::vector <int> counterlist;
     Arrows::loopsearch(ar1,ar3,str,counter,max);
-    Arrows::loopsearch(ar1,ar4,str,counter,max);   
+		counterlist.push_back(max);
+    Arrows::loopsearch(ar1,ar4,str,counter,max);
+		counterlist.push_back(max);
     Arrows::loopsearch(ar2,ar3,str,counter,max);
+		counterlist.push_back(max);
     Arrows::loopsearch(ar2,ar4,str,counter,max);
-	std::cout << max << std::endl;
-	return max;
+		counterlist.push_back(max);
+	for(int c = 0; c < counterlist.size(); c++)
+	{
+		if(maxnum < counterlist[c])
+		{
+			maxnum = counterlist[c];
+		}
+	}
+	std::cout << maxnum << std::endl;
+	return maxnum;
 }
 
 int main()
