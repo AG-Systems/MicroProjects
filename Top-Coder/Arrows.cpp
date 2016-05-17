@@ -13,7 +13,7 @@ int Arrows::longestArrow(std::string str)
 	bool checker = false;
 	for(int z = 0; z < str.size(); z++)
 	{
-		if(str[z] == '<' && str[z] != str[str.size()])
+		if(str[z] == '<' && str[z] != str[str.size()-1])
 		{
 			if(str[z+1] == '<' || str[z+1] == '>')
 			{
