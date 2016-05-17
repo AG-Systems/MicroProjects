@@ -4,53 +4,66 @@ class Arrows
 {
 public:
 	int longestArrow(std::string);
+	int loopsearch(char,char,std::string,int,int);
+	int loopsearchrev(char,char,std::string,int,int);
 };
-
-int Arrows::longestArrow(std::string str)
+char ar1 = '<';
+char ar2 = '>';
+char ar3 = '-';
+char ar4 = '=';
+int Arrows::loopsearch(char c, char b,std::string str,int counter, int max)
 {
-	int max = 0;
-	int counter = 0;
-	bool checker = false;
 	for(int z = 0; z < str.size(); z++)
 	{
-		if(str[z] == '<' && str[z] != str[str.size()-1])
+		if(str[z] == c && str[z] != str[str.size()-2])
 		{
-			if(str[z+1] == '<' || str[z+1] == '>')
-			{
-				counter = 0;
-			}
-			else if(str[z+1] ==  str[z+2])
-			{
-				counter += 2;				
-			}
-			else if(str[z+1] !=  str[z+2])
-			{
-				counter += 1;				
-			} 
+            z++;
+            if(str[z] == b && str[z-1] == str[z])
+            {
+                counter++;    
+            }
+            if(str[z] == b && str[z-1] != str[z])
+            {
+                counter = 1;
+            }
 		}
 		if(max < counter)
 		{
 			max = counter;
 		}
 	}
-	for(int x = str.size(); x > 0; x--)
-	{
-		if(str[x] == '>' && str[x] != str[0])
-		{
-			if(str[x-1] == '<' || str[x-1] == '>')
-			{
-				counter = 0;
-			}
-			else if(str[x-1] ==  str[x-2])
-			{
-				counter += 2;				
-			}
-			else if(str[x-1] !=  str[x-2])
-			{
-				counter += 1;				
-			} 
-		}		
-	}
+	return max;
+}
+int Arrows::loopsearchrev(char c, char b, std::string str, int counter, int max)
+{
+    for(int x = str.size(); x > 0; x--)
+    {
+        if(str[x] == c && str[x] != str[2])
+        {
+            x--;
+            if(str[x] == b && str[x+1] == str[x])
+            {
+                counter++;    
+            }
+            if(str[z] == b && str[z+1] != str[z])
+            {
+                counter = 1;    
+            }
+        }
+        if(max < counter)
+        {
+            max = counter;    
+        }
+    }
+}
+int Arrows::longestArrow(std::string str)
+{
+    int max = 0;
+    int counter = 0;
+    Arrows::loopsearch(ar1,ar3,str,counter,max);
+    Arrows::loopsearch(ar1,ar4,str,counter,max);   
+    Arrows::loopsearch(ar2,ar3,str,counter,max);
+    Arrows::loopsearch(ar2,ar4,str,counter,max);
 	std::cout << max << std::endl;
 	return max;
 }
