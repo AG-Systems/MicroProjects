@@ -1,85 +1,74 @@
 #include <iostream>
+#include <string>  
 #include <vector>
 class Arrows
 {
 public:
 	int longestArrow(std::string);
-	int loopsearch(char,char,std::string,int,int);
-	int loopsearchrev(char,char,std::string,int,int);
+	int arrowFinder(std::string,std::string, std::string,int);
+	int revarrowFinder(std::string,std::string,std::string,int);
 };
-char ar1 = '<';
-char ar2 = '>';
-char ar3 = '-';
-char ar4 = '=';
-int Arrows::loopsearch(char c, char b,std::string str,int counter, int max)
+int Arrows::arrowFinder(std::string str1,std::string str2,std::string str3,int counter)
 {
-	for(int z = 0; z < str.size(); z++)
+	for(int z = 0; z < str1.size(); z++)
 	{
-		if(str[z] == c && str[z] != str[str.size()-2])
+		std::size_t found = str1.find(str2);
+		if(found!=std::string::npos)
 		{
-            z++;
-            if(str[z] == b && str[z-1] == str[z])
-            {
-                counter++;    
-            }
-            if(str[z] == b && str[z-1] != str[z])
-            {
-                counter = 1;
-            }
+			counter++;
+			str1 += str3;
 		}
-		if(max < counter)
+		else
 		{
-			max = counter;
+			break;
 		}
 	}
-	return max;
+	return counter;
 }
-int Arrows::loopsearchrev(char c, char b, std::string str, int counter, int max)
+
+int Arrows::revarrowFinder(std::string str1,std::string str2, std::string str3, int counter)
 {
-    for(int x = str.size(); x > 0; x--)
-    {
-        if(str[x] == c && str[x] != str[2])
-        {
-            x--;
-            if(str[x] == b && str[x+1] == str[x])
-            {
-                counter++;    
-            }
-            if(str[x] == b && str[x+1] != str[x])
-            {
-                counter = 1;    
-            }
-        }
-        if(max < counter)
-        {
-            max = counter;    
-        }
-    }
-	return max;
+	for(int z = 0; z < str1.size(); z++)
+	{
+		std::size_t found = str1.find(str2);
+		if(found!=std::string::npos)
+		{
+			counter++;
+			str1 = str3 + str1;
+		}
+		else
+		{
+			break;
+		}
+	}
+	return counter;	
 }
 int Arrows::longestArrow(std::string str)
 {
-    int max = 0;
-    int counter = 0;
-	int maxnum = str[0];
-	std::vector <int> counterlist;
-    Arrows::loopsearch(ar1,ar3,str,counter,max);
-		counterlist.push_back(max);
-    Arrows::loopsearch(ar1,ar4,str,counter,max);
-		counterlist.push_back(max);
-    Arrows::loopsearch(ar2,ar3,str,counter,max);
-		counterlist.push_back(max);
-    Arrows::loopsearch(ar2,ar4,str,counter,max);
-		counterlist.push_back(max);
-	for(int c = 0; c < counterlist.size(); c++)
+	int counter = 0;
+	std::vector <int> list;
+	int highnum = str[0];
+	std::string frontarrow = "<";
+	std::string backarrow = ">";
+	std::string dash = "-";
+	std::string equal = "=";
+	Arrows::arrowFinder(str,frontarrow,dash,counter);
+	list.push_back(counter);
+	Arrows::arrowFinder(str,frontarrow,equal,counter);
+	list.push_back(counter);
+	Arrows::revarrowFinder(str,backarrow,dash,counter);
+	list.push_back(counter);
+	Arrows::revarrowFinder(str,backarrow,equal,counter);
+	for(int c = 0; c < list.size(); c++)
 	{
-		if(maxnum < counterlist[c])
+		std::cout << list[c] << " ";
+		if(highnum < str[c])
 		{
-			maxnum = counterlist[c];
+			highnum = str[c];
 		}
 	}
-	std::cout << maxnum << std::endl;
-	return maxnum;
+	std::cout << "The longest arrow is: " << highnum << std::endl;
+	return highnum;
 }
 
 int main()
