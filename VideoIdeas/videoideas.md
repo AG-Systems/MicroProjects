@@ -13,3 +13,5 @@ Ekko tank jungle s6
 Riven jungle s6
 
 Jinx jungle s6
+
+Tank shaco guide "tanko" s6
