@@ -15,3 +15,5 @@ Riven jungle s6
 Jinx jungle s6
 
 Tank shaco guide "tanko" s6
+
+Attack speed ekko jungle s6
