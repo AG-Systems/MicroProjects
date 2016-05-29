@@ -123,6 +123,7 @@ Site that respects the artists
 Write a motivional book
        
        [TITLE] Advice to teens and advice I wish I had
+       [TITLE] How to change your life and for the better
 
 Become a motiovational speaker
 
