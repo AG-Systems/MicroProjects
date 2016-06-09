@@ -144,3 +144,5 @@ Read 20 min a day
 Motiviational channel
 
 Workout app
+
+Linkedin alt
