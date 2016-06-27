@@ -161,4 +161,6 @@ Ruby On Rails Site Ideas
        [TITLE] Ecommerciane store
        [TITLE] Motivational site
        [TITLE] Simplepickup like app
+       [TITLE] Youtube video self share website
+       [TITLE] Youtube like website
        [TITLE] App idea site
