@@ -152,3 +152,13 @@ Dating advice
 Music player that connects pandora,mp3, soundclound, youtube, and spotify to one application
 
 Sell websites to people
+
+Ruby On Rails Site Ideas
+       
+       [TITLE] Gamer Social Networking (glabs?)
+       [TITLE] Professional social networking (better version of linked in)
+       [TITLE] Eve online timer 
+       [TITLE] Ecommerciane store
+       [TITLE] Motivational site
+       [TITLE] Simplepickup like app
+       [TITLE] App idea site
