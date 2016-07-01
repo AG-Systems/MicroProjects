@@ -1,4 +1,5 @@
 Hollister style site
-  Either sell it or actually sell clothes
+  
+  [either sell it or actually sell clothes]
 
 People are willing to pay extra if it involves a status. Brand image is everything. Same thing with quality.
