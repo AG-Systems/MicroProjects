@@ -164,3 +164,5 @@ Ruby On Rails Site Ideas
        [TITLE] Youtube video self share website
        [TITLE] Youtube like website
        [TITLE] App idea site
+
+Learn react 
