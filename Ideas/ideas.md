@@ -167,7 +167,6 @@ Ruby On Rails Site Ideas
 
 Learn react 
 
-Perfomance car racing parts shop
-
+Perfomance car racing parts shop (RC)
 
 Proguides like site
