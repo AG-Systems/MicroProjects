@@ -1,7 +1,6 @@
-Finsih working on the comments. Make em look good and make sure you dont have to refresh the page
+Finsih working on the comments. Make em look good and make sure you dont have to refresh the page [complete]
 
 Make user profiles
-
 
 Make the site not freak out
 
