@@ -1,6 +1,6 @@
 Finsih working on the comments. Make em look good and make sure you dont have to refresh the page [complete]
 
-Make user profiles
+Make user profiles [50% done]
 
 Make the site not freak out
 
@@ -10,4 +10,4 @@ Make sure the site doesnt fail with bugs and stuff
 
 Make it look prettier
 
-Work on the admin part
+Work on the admin part [complete]
