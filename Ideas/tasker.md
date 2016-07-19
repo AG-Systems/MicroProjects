@@ -10,6 +10,10 @@ Make sure the site doesnt fail with bugs and stuff
 
 Make it look prettier
 
+Add messaging
+
+Add following
+
 Work on the admin part [complete]
 
 http://www.peoplecancode.com/tutorials/users-avatars-uploading-images-using-paperclip
