@@ -1,5 +1,7 @@
 Finsih working on the comments. Make em look good and make sure you dont have to refresh the page [complete]
 
+Add username to comments
+
 Make user profiles [50% done]
 
 Make the site not freak out
