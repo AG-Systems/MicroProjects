@@ -86,7 +86,7 @@ Stock market bot
 
 Make a desktop stock tracker
 
-Make a buisness store.
+Make a buisness store
 
 Make site sorta like thisiswhyimbroke.com 
 
@@ -94,7 +94,7 @@ appidea app
 
 Better version of soundcloud mobile app.
 
-Stack game ai 
+Stack game ai bot
 
 Programing mobile problems
 
@@ -116,7 +116,6 @@ blog
 
 twitter-clone
 
-workout site
 
 Site that respects the artists
 
