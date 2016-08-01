@@ -175,3 +175,5 @@ Pokémon go Uber style
 Make startup
 
 New google style search engine 
+
+Make subscription model 
