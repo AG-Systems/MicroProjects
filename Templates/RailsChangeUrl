@@ -1,0 +1,8 @@
+   domain.com/books/272
+   
+    to
+
+   domain.com/stories/272
+   
+   
+   resources :books, :path => 'stories'
