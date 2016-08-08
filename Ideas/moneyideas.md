@@ -7,3 +7,5 @@ People are willing to pay extra if it involves a status. Brand image is everythi
 Pro guides like site
 
 Make a site like thisiswhyimbroke.com
+
+Affiliate site for niches 
