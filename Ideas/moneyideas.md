@@ -9,3 +9,5 @@ Pro guides like site
 Make a site like thisiswhyimbroke.com
 
 Affiliate site for niches 
+
+(cars, geeky toys)
