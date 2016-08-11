@@ -13,3 +13,5 @@ Affiliate site for niches
 (cars, geeky toys)
 
 Monthly smoothie blend box
+
+Instagram like bot and charge them $5 per month
