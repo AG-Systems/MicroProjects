@@ -181,3 +181,5 @@ Make subscription model
 Dropship model 
 
 When u search a hex color, you get a hex color pad
+
+Gas money pricer
