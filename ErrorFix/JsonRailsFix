@@ -1,0 +1,8 @@
+Ensure you have latest version of rubygems: gem update --system
+Uninstall sqlite3
+Install sqlite3: gem install json
+Check install version: gem list json
+
+bundle update json
+
+
