@@ -18,13 +18,13 @@ public:
             sum += num % 10;
             num /= 10;
         }
-        if(counter(sum) < 2)
+        if(counter(sum) == 1)
         {
             return sum;
         }
         else
         {
-            while ( num > 0 && counter(sum) > 1) 
+            while (counter(sum) > 1) 
             {
                 sum += num % 10;
                 num /= 10;
