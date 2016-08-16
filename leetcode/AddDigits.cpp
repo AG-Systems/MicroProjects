@@ -18,7 +18,7 @@ public:
             sum += num % 10;
             num /= 10;
         }
-        if(counter(sum) > 1)
+        if(counter(sum) < 2)
         {
             return sum;
         }
