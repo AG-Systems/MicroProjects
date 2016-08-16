@@ -1,9 +1,9 @@
 class Solution {
 public:
-    int intsize(int x)
+    int counter(int var)
     {
         int length = 1;
-        while ( x /= 10 )
+        while ( var /= 10 )
         {
             length++;
         }
@@ -11,14 +11,25 @@ public:
     }
     int addDigits(int num) 
     {
-        if(intsize(num) > 1)
+
+        int sum = 0;
+        while ( num > 0 ) 
         {
-            int sum = 0;
-            while ( num > 0 ) 
+            sum += num % 10;
+            num /= 10;
+        }
+        if(counter(sum) > 1)
+        {
+            return sum;
+        }
+        else
+        {
+            while ( num > 0 && counter(sum) > 1) 
             {
                 sum += num % 10;
                 num /= 10;
             }
+            return sum;
         }
     }
 };
