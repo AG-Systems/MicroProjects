@@ -15,3 +15,5 @@ Affiliate site for niches
 Monthly smoothie blend box
 
 Instagram like bot and charge them $5 per month
+
+confidentmindset
