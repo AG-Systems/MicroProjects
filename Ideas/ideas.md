@@ -195,3 +195,5 @@ C++ monopoly
 Learn react native
 
 Learn swift
+
+Moving on app
