@@ -196,4 +196,4 @@ Learn react native
 
 Learn swift
 
-Moving on app
+gomoveon app
