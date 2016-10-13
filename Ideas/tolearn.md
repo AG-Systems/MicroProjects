@@ -17,7 +17,7 @@ Back end:
           1. Ruby on Rails
           2. Node.js
           3. Go
-          4.Haskell
+          4. Haskell
           
           
           Caching:
