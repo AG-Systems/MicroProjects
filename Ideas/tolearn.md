@@ -36,7 +36,7 @@ Back end:
                   1. 0AUTH2
                   2. JSON WebToken
                   3. Testing
-                  4. RESTFUL / API Serrvices
+                  4. RESTFUL / API Services
 Web Platform:
 
 
