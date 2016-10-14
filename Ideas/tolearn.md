@@ -28,6 +28,7 @@ Back end:
                   1. MySQL
                   2. PostgreSQL
                   3. MongoDB
+                  4. GraphQL
                   4. Redis
                   5. ElasticSearch
           Other:
