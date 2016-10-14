@@ -44,3 +44,37 @@ Web Platform:
           1. Digital Ocean
           2. Amazon Web Services
           3. Heroku
+Android:
+
+          1. ReactNative
+          2. Android studio
+IOS:
+
+          1. Swift
+          2. Xcode (with swift)
+C++:
+
+          1. Classes and objects
+          2. Inheritance and polymorphism
+          3. Dynamic Memory 
+          4. References and pointers
+          5. Structures
+          6. Enumerations
+          7. Virtual classes
+          8. Concurrency (multi-threading)
+          9. Algorithms & Data Structures
+          10. Encapsulation
+Java:
+
+          1. Same thing as C++
+Compilers:
+
+          1. lexical analysis
+          2. Actually making one lol
+Data science:
+
+          1. I dont know what this is besides I want to learn it in the future
+Big Data:
+
+          1. Same thing ^
+        
