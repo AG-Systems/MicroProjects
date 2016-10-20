@@ -81,3 +81,6 @@ Big Data:
 In general:
 
           1. Tensorflow
+Startup:
+
+          1. Angular + Firebase
