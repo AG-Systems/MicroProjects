@@ -9,7 +9,7 @@ Front end dev:
           5. Sass / less / stylus
           6. es6
           7. Vanilla JavaScript
-          
+          8. Vue.js
           
 Back end:
 
@@ -81,6 +81,8 @@ Big Data:
 In general:
 
           1. Tensorflow
+          2. SCIKIT Learn
+          3. Programming problems
 Startup:
 
           1. Angular + Firebase
