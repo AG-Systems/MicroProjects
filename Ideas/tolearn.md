@@ -83,6 +83,7 @@ In general:
           1. Tensorflow
           2. SCIKIT Learn
           3. Programming problems
+          4. Investing
 Startup:
 
           1. Angular + Firebase
