@@ -84,8 +84,5 @@ In general:
           2. SCIKIT Learn
           3. Programming problems
           4. Investing
-Startup:
-
-          1. Angular + Firebase
-          2. Springboard
-          3. Entrepuernship
+          5. Startups
+          6. Math
