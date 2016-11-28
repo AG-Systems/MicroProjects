@@ -10,6 +10,7 @@ Front end dev:
           6. es6
           7. Vanilla JavaScript
           8. Vue.js
+          Vuex, and router
           
 Back end:
 
@@ -76,7 +77,7 @@ Data science:
           1. I dont know what this is besides I want to learn it in the future
 Big Data:
 
-          1. Same thing ^
+          1. Hadoop
         
 In general:
 
@@ -86,3 +87,4 @@ In general:
           4. Investing
           5. Startups
           6. Math
+Operating Systems:
