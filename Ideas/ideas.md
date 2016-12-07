@@ -215,4 +215,5 @@ Self driving phone video thingy
 Parking app 
 
 Restaurant tip 
-Machine learning project 
+
+Machine learning project  with social media 
