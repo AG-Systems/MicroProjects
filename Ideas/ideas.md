@@ -217,5 +217,42 @@ Parking app
 Restaurant tip 
 
 Machine learning project  with social media 
-Startup research 
-Angel list estate 
+
+
+    Here are the top 12 imho
+    
+    
+    Marketplace for apprenticeships (Chris Oliver)
+    
+    
+    A startup where you can upload a file, have it printed then mailed to an address you choose (from HN)
+    
+    
+    An Uber-like app where people pay for their rides with banked miles earned by giving others rides (from HN)
+    
+    
+    White label Uber for other taxi services (from HN)
+    
+    
+    Job search site based on company perks (Graham Wahlberg)
+    
+    
+    Angellist for real estate (Graham Wahlberg)
+    
+    
+    Terms and conditions as a service (from HN)
+    
+    
+    House maintenance as a service (from HN)
+    
+    
+    On-demand trash collection service (Bill Gross)
+    
+    
+    A pay-to-post social network (from HN)
+    
+    
+    Social network where users can only post every 24 hours (GaryVee)
+    
+    
+    Furniture search by dimensions (from HN)
