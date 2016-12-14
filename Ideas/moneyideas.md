@@ -17,3 +17,5 @@ Monthly smoothie blend box
 Instagram like bot and charge them $5 per month
 
 confidentmindset
+
+Helping people land job interviews
