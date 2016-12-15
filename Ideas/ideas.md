@@ -247,7 +247,8 @@ Machine learning project  with social media
     
     
     On-demand trash collection service (Bill Gross)
-    
+
+
     
     A pay-to-post social network (from HN)
     
