@@ -89,4 +89,8 @@ In general:
           6. Math
 Operating Systems:
 
-Solve programming problems
+Solve programming problems:
+
+          
+          1. Topcoder
+          2. Leetcode
