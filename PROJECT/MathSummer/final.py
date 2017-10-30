@@ -11,6 +11,7 @@ root.fileName = filedialog.askopenfilename( filetypes = ( ("Normal files", "*.tx
 print (root.fileName)
 
 total_sum = 0
+counter = 0
 with open(root.fileName, "rb") as imageFile:
     searchfile = imageFile
     for line in searchfile:
@@ -20,6 +21,8 @@ with open(root.fileName, "rb") as imageFile:
             print("Number obtained:" + str(num))
             total_sum += num
             print("Sum so far: " + str(total_sum))
+        counter += 1
     searchfile.close()
-
+print("\n")
 print("TOTAL SUMMED B: " + str(total_sum))
+print("How many lines in ur file: " + str(counter))
